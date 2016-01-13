@@ -24,8 +24,8 @@ class bbrad(HasTraits):
 	_T_changed : checks for changes in T 
 	and updates the plot corrspondingly
 	"""
-	T = Float
-#	T = Range(3000,10000)
+#	T = Float
+	T = Range(1000, 10000, mode = 'xslider')
 
 	def bbradfn(self, lamda, T):
 		"""bbradfn : a function that defines the 
