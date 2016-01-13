@@ -1,0 +1,23 @@
+the program can be run by doing
+$ python main.py
+
+Note
+-----
+1) Before ticking a box, make sure that the other box is unticked.
+2) As before, the plots need to be closed so that changes 
+made in the traitsUI editor are used to update the plots.
+3) The individual models can be run on their own, by doing 
+$ python foo_vis.py
+after having commented the last two lines that create 
+an instance of the class and call the configure_traits() method
+on the instance.
+
+To be added
+------------
+1) More physics modules.
+2) Additional item in the traitsUI that 
+contains information on which module is selected 
+and the parameter set being used, instead of
+printing the same to stdout, on the terminal.
+3) Updating or redrawing matplotlib canvas
+instead of replotting.
