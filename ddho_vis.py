@@ -42,7 +42,7 @@ class ddho(HasTraits):
 	k = Float
 	a = Float
 
-	def eval_plot(self):
+	def eval_ddho_plot(self):
 		""" for a specific set of 
 		(k,a), values, this method evaluates 
 		the position x of the ddho with time t"""
@@ -70,13 +70,13 @@ class ddho(HasTraits):
 		"""checks for changes in k 
 		and updates the plot corrspondingly"""
 		print 'the force constant : k has been changed from %s to %s ' % (old, new)
-		self.eval_plot()
+		self.eval_ddho_plot()
 
 	def _a_changed(self, old, new):
 		"""checks for changes in a 
 		and updates the plot corrspondingly"""
 		print 'the damping parameter : a has been changed from %s to %s ' % (old, new)
-		self.eval_plot()                               
+		self.eval_ddho_plot()                               
 
 # uncomment the following lines
 # if you are interested in running 

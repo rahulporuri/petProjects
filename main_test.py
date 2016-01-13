@@ -60,15 +60,12 @@ class visphys(ddho, bbrad, HasTraits):
 #			print 'displaying the blackbody raditaion curve visualization'
 #		self.eval_vis()                               """
 
-ddho_inst = ddho()
-bbrad_inst = bbrad()
-
 view1 = View(Item(name = 'dis_ddho'),
 		Item(name = 'dis_bbrad'),
 		Item(name = 'k', enabled_when = 'dis_ddho == True'),
 		Item(name = 'a', enabled_when = 'dis_ddho == True'),
 		Item(name = 'T', enabled_when = 'dis_bbrad == True'),
-		buttons = [ApplyButton])
+	)
 
 visphys_inst = visphys()
 visphys_inst.configure_traits(view = view1)

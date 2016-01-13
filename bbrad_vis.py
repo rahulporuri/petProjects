@@ -33,7 +33,7 @@ class bbrad(HasTraits):
 		as a function of temperature and wavelength."""
 		return (2*h*c*c)/(((lamda*1e-10)**5)*(numpy.exp(h*c/(lamda*1e-10*k*T))-1))
 
-	def eval_plot(self):
+	def eval_bbrad_plot(self):
 		""" for a specific set of 
 		T value, this method evaluates the amount 
 		of radiation emitted by a blackbody."""
@@ -49,7 +49,7 @@ class bbrad(HasTraits):
 		"""checks for changes in k 
 		and updates the plot corrspondingly"""
 		print 'the temperature of the blackbody emitter : T has been changed from %s to %s ' % (old, new)
-		self.eval_plot()
+		self.eval_bbrad_plot()
 
 # uncomment the following lines 
 # if you are interested in running 
