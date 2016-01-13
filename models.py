@@ -1,4 +1,4 @@
-from traits.api import HasTraits, Bool, Float
+from traits.api import HasTraits, Bool, Float, Range
 from traitsui.api import View, Item, Group
 
 import matplotlib.pyplot as plt
@@ -49,7 +49,7 @@ class Models(HasTraits):
 
 	k = Float
 	a = Float
-	T = Float
+	T = Range(1,9)
 
 	def eval_ddho_plot(self):
 		""" for a specific set of 
@@ -87,7 +87,7 @@ class Models(HasTraits):
                 of radiation emitted by a blackbody."""
 
                 lamda = numpy.linspace(1000,10000,100)
-                plt.plot(lamda, self.bbradfn(lamda, self.T), label=('T=',self.T))
+                plt.plot(lamda, self.bbradfn(lamda, self.T*10**3), label=('T=',self.T*10**3))
                 plt.legend(loc = 'upper right')
                 plt.xlabel('wavelength')
                 plt.ylabel('intensity I')
