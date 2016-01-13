@@ -111,11 +111,12 @@ class Models(HasTraits):
                 print 'the temperature of the blackbody emitter : T has been changed from %s to %s ' % (old, new)
                 self.eval_bbrad_plot()
 
-view1 = View(Item(name = 'disp_bbrad'),
-             Item(name = 'disp_ddho'),
-             Item(name = 'k', enabled_when = 'disp_ddho == True'),
-             Item(name = 'a', enabled_when = 'disp_ddho == True'),
-	     Item(name = 'T', enabled_when = 'disp_bbrad == True'))
+view1 = View(Group(Item(name = 'disp_bbrad'),
+		     Item(name = 'T', enabled_when = 'disp_bbrad == True')),
+		Group(Item(name = 'disp_ddho'),
+	             Item(name = 'k', enabled_when = 'disp_ddho == True'),
+	             Item(name = 'a', enabled_when = 'disp_ddho == True')),
+)
 
 model_inst = Models()
 model_inst.configure_traits(view = view1)
