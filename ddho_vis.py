@@ -78,9 +78,6 @@ class ddho(HasTraits):
 		print 'the damping parameter : a has been changed from %s to %s ' % (old, new)
 		self.eval_ddho_plot()                               
 
-# uncomment the following lines
-# if you are interested in running 
-# this file individually
-#
-# ddho_inst = ddho()
-# ddho_inst.configure_traits()
+if __name__ == "__main__":
+	ddho_inst = ddho()
+	ddho_inst.configure_traits()
