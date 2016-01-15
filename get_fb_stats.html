@@ -1702,7 +1702,7 @@ In&nbsp;[2]:
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="o">.</span><span class="n">BeautifulSoup</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s">&#39;wall.htm&#39;</span><span class="p">))</span>
-<span class="n">allAttrs</span> <span class="o">=</span> <span class="p">[</span><span class="n">tag</span><span class="o">.</span><span class="n">string</span> <span class="k">for</span> <span class="n">tag</span> <span class="ow">in</span> <span class="n">soup</span><span class="o">.</span><span class="n">findAll</span><span class="p">(</span><span class="s">&#39;div&#39;</span><span class="p">)]</span>
+<span class="n">allAttrs</span> <span class="o">=</span> <span class="p">[[</span><span class="n">tag</span><span class="o">.</span><span class="n">attrs</span><span class="p">,</span> <span class="n">tag</span><span class="o">.</span><span class="n">string</span><span class="p">]</span> <span class="k">for</span> <span class="n">tag</span> <span class="ow">in</span> <span class="n">soup</span><span class="o">.</span><span class="n">findAll</span><span class="p">(</span><span class="s">&#39;div&#39;</span><span class="p">)]</span>
 </pre></div>
 
 </div>
@@ -1719,10 +1719,14 @@ In&nbsp;[3]:
     <div class="input_area">
 <div class="highlight"><pre><span class="n">dates</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">string</span> <span class="ow">in</span> <span class="n">allAttrs</span><span class="p">:</span>
-        <span class="k">try</span> <span class="p">:</span>
-                <span class="n">dates</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">string</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s">&#39;u&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
-        <span class="k">except</span> <span class="ne">TypeError</span> <span class="p">:</span>
+    <span class="k">try</span> <span class="p">:</span>
+        <span class="k">if</span> <span class="n">string</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s">u&#39;meta&#39;</span><span class="p">:</span>
+            <span class="k">try</span> <span class="p">:</span>
+                <span class="n">dates</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">string</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s">&#39;u&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+            <span class="k">except</span> <span class="ne">TypeError</span> <span class="p">:</span>
                 <span class="k">print</span> <span class="n">string</span>
+    <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+        <span class="k">pass</span>
 
 <span class="c">#dateList = numpy.asarray(dates, dtype=int)</span>
 
@@ -1740,7 +1744,7 @@ In&nbsp;[3]:
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-3613
+2367
 
 </pre>
 </div>
@@ -1757,19 +1761,7 @@ In&nbsp;[4]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">dayList</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">dateList</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">monthList</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">yearList</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="k">for</span> <span class="n">string</span> <span class="ow">in</span> <span class="n">dates</span><span class="p">[</span><span class="mi">3</span><span class="p">:]:</span>
-        <span class="k">try</span><span class="p">:</span>
-                <span class="n">dayList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">string</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-                <span class="n">dateList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">string</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
-                <span class="n">monthList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">string</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-                <span class="n">yearList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">string</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
-        <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
-                <span class="k">print</span> <span class="n">string</span>                
+<div class="highlight"><pre><span class="n">dates</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -1780,312 +1772,54 @@ In&nbsp;[4]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>
-[&apos;Stalked&apos;, &apos;you!&apos;, &apos;^_^&apos;]
-[&apos;http://idlewords.com/talks/what_happens_next_will_amaze_you.htm&apos;]
-[&apos;half-a-century&apos;, &apos;of&apos;, &apos;posts...&apos;]
-[&apos;10&apos;, &apos;more.&apos;]
-[&apos;omg!&apos;, &apos;:o&apos;]
-[&apos;:&amp;#039;(&apos;, &apos;:&amp;#039;(&apos;]
-[&apos;Created&apos;, &apos;with&apos;, &apos;facebook.com/celebratepride&apos;]
-[&apos;sooo&apos;, &apos;so&apos;, &apos;beautiful!&apos;]
-[&apos;yeowza!&apos;, &apos;:D&apos;]
-[&apos;*_*&apos;]
-[&apos;simply&apos;, &apos;breathtaking!&apos;]
-[&apos;damn&apos;, &apos;:O&apos;]
-[&apos;10&apos;, &apos;TB!&apos;]
-[&apos;http://www.atlasobscura.com/places/the-great-green-wall-of-africa&apos;]
-[&apos;damn&apos;]
-[&apos;ohmygodohmygodohmygod&apos;]
-[&apos;so&apos;, &apos;much&apos;, &apos;awesomeness!!!&apos;]
-[&apos;I&apos;, &apos;am&apos;, &apos;Batman!&apos;]
-[&apos;beautifully&apos;, &apos;written&apos;]
-[&apos;goosebumps&apos;, &apos;:D...&apos;]
-[&apos;epic!!!&apos;, &apos;:D...&apos;]
-[&apos;lolol!!&apos;]
-[&apos;lolol!&apos;, &apos;:D...&apos;]
-[&apos;awwwesome!!!&apos;, &apos;:D...&apos;]
-[&apos;:/&apos;]
-[&apos;x\xef\xbf\xbd\xef\xbf\xbdi\xef\xbf\xbdQRR&#96;\xef\xbf\xbd\xef\xbf\xbd_\xef\xbf\xbd\xef\xbf\xbdQ\xef\xbf\xbdS\xef\xbf\xbd_TZ\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd^\\\xef\xbf\xbd_\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc3\x85EAzfIFi\xef\xbf\xbd^f\xef\xbf\xbd&amp;gt;\xef\xbf\xbd*\x16\x18J&apos;]
-[&apos;lolol!&apos;, &apos;:D...&apos;]
-[&apos;LOLOL!!!&apos;, &apos;X-D...&apos;]
-[&apos;woah!&apos;]
-[&apos;Yo!&apos;]
-[&apos;adrenaline&apos;, &apos;boost!&apos;, &apos;:D...&apos;]
-[&apos;Happy&apos;, &apos;Birthday...!!!&apos;]
-[&apos;happie&apos;, &apos;bdayy&apos;, &apos;:))&apos;]
-[&apos;Happy&apos;, &apos;birthday!&apos;, &apos;:D&apos;]
-[&apos;Happy&apos;, &apos;Birthday!&apos;, &apos;:)&apos;]
-[&apos;happy&apos;, &apos;birthday&apos;, &apos;ra...&apos;]
-[&apos;happy&apos;, &apos;b&#96;day&apos;, &apos;dude...&apos;]
-[&apos;happy&apos;, &apos;bday..&apos;]
-[&apos;happy&apos;, &apos;birthday!&apos;]
-[&apos;Happy&apos;, &apos;Birthday&apos;, &apos;:)&apos;]
-[&apos;Happy&apos;, &apos;Birthday&apos;, &apos;man!&apos;]
-[&apos;Happy&apos;, &apos;birthday!!&apos;, &apos;:D&apos;]
-[&apos;happy&apos;, &apos;bday&apos;, &apos;:)&apos;]
-[&apos;Happy&apos;, &apos;Birthday&apos;]
-[&apos;Happy&apos;, &apos;Birthday!&apos;]
-[&apos;happy&apos;, &apos;birthday!!!&apos;]
-[&apos;Happy&apos;, &apos;Birthday!!:)&apos;]
-[&apos;Happy&apos;, &apos;birthday&apos;, &apos;man!&apos;]
-[&apos;Happy&apos;, &apos;Birthday!!&apos;]
-[&apos;Happy&apos;, &apos;Birthday&apos;, &apos;dude&apos;]
-[&apos;happy&apos;, &apos;birthday&apos;, &apos;:)&apos;]
-[&apos;happy&apos;, &apos;birthday!!!&apos;]
-[&apos;Happy&apos;, &apos;Birthday&apos;, &apos;Drlz...&apos;]
-[&apos;happie&apos;, &apos;b.day&apos;, &apos;ra&apos;]
-[&apos;Happy&apos;, &apos;Birthday!!&apos;]
-[&apos;Happy&apos;, &apos;Birthday!&apos;, &apos;:)&apos;]
-[&apos;Happy&apos;, &apos;birthday&apos;, &apos;man!!&apos;]
-[&apos;Hapy&apos;, &apos;b&amp;#039;day&apos;]
-[&apos;Happy&apos;, &apos;Bday&apos;]
-[&apos;Woah!&apos;]
-[&apos;Sad&apos;, &apos;:(&apos;]
-[&apos;epic!!!&apos;, &apos;:D...&apos;]
-[&apos;http://blogs.nature.com/naturejobs/2011/10/04/major-survey-of-phd-students-in-europe-sheds-light-on-working-life&apos;]
-[&apos;http://www.nytimes.com/2013/10/20/opinion/sunday/the-good-men-of-india.html?smid=fb-share&amp;amp;_r=0&apos;, &apos;Because.&apos;]
-[&apos;http://mrwgifs.com/excited-really-spongebob-reaction-gif/&apos;]
-[&apos;hehehe&apos;, &apos;:D...&apos;]
-[&apos;Brilliant!&apos;]
-[&apos;Ani&apos;, &apos;:D...&apos;]
-[&apos;lol!&apos;]
-[&apos;well&apos;, &apos;said&apos;, &apos;sir!&apos;]
-[&apos;:&amp;#039;D&apos;, &apos;LOL!&apos;]
-[&apos;lol&apos;, &apos;:D...&apos;]
-[&apos;fffack!&apos;, &apos;:O&apos;]
-[&apos;Patel&apos;, &apos;:D...&apos;]
-[&apos;so&apos;, &apos;beautiful&apos;, &apos;:&amp;#039;)...&apos;]
-[&apos;epic!&apos;, &apos;:&#96;D...&apos;]
-[&apos;this&apos;]
-[&apos;interesting...&apos;]
-[&apos;sigh.&apos;, &apos;sigh...&apos;]
-[&apos;zen&apos;, &apos;:)&apos;]
-[&apos;just&apos;, &apos;2&apos;, &apos;steps!&apos;]
-[&apos;epic&apos;, &apos;wonly!&apos;]
-[&apos;albeit&apos;, &apos;late...&apos;]
-[&apos;http://www.youtube.com/watch?v=fWNaR-rxAic&apos;, &apos;:|&apos;]
-[&apos;woww..&apos;]
-[&apos;one&apos;, &apos;more&apos;, &apos;week...&apos;]
-[&apos;epic!!!&apos;]
-[&apos;week&apos;, &apos;2!&apos;]
-[&apos;namaskaram.&apos;, &apos;from&apos;, &apos;trivandrum.&apos;]
-[&apos;LMAO!&apos;, &apos;EPIC!&apos;, &apos;:D...&apos;]
-[&apos;Come&apos;, &apos;back&apos;, &apos;:&amp;#039;(&apos;]
-[&apos;Cat&apos;, &apos;guy&apos;, &apos;:D&apos;]
-[&apos;epic&apos;, &apos;:D...&apos;]
-[&apos;faaaaaack&apos;, &apos;:D...&apos;]
-[&apos;nnnnaaaaiiiiiccce&apos;]
-[&apos;https://www.facebook.com/photo.php?fbid=493358167403274&amp;amp;set=a.414754115263680.94958.414753515263740&amp;amp;type=1&amp;amp;theater&apos;]
-[&apos;http://theoatmeal.com/comics/mantis_shrimp&apos;]
-[&apos;LOL&apos;, &apos;:D...&apos;]
-[&apos;LOL!&apos;, &apos;:D...&apos;]
-[&apos;:)&apos;]
-[&apos;https://www.facebook.com/photo.php?fbid=321027264689755&amp;amp;set=a.220052224787260.48006.220045591454590&amp;amp;type=1&amp;amp;theater&apos;]
-[&apos;awesome!&apos;, &apos;:D...&apos;]
-[&apos;Red&apos;, &apos;Fort!!!&apos;]
-[&apos;Red&apos;, &apos;Fort!!!&apos;]
-[&apos;Red&apos;, &apos;Fort!!!&apos;]
-[&apos;Red&apos;, &apos;Fort!!!&apos;]
-[&apos;Red&apos;, &apos;Fort!!!&apos;]
-[&apos;Red&apos;, &apos;Fort!!!&apos;]
-[&apos;Red&apos;, &apos;Fort!!!&apos;]
-[&apos;hehehehe...&apos;]
-[&apos;EPIC!&apos;, &apos;:D...&apos;]
-[&apos;http://xkcd.com/482/&apos;, &apos;&amp;quot;mrowl!&amp;quot;&apos;, &apos;hehehehe....&apos;]
-[&apos;truly&apos;, &apos;inspiring&apos;, &apos;:)...&apos;]
-[&apos;http://www.project-syndicate.org/commentary/the-impact-of-educating-girls-on-economic-growth-in-developing-countries-by-shashi-tharoor#ID6mhceGDXxpurX4.99&apos;]
-[&apos;happy&apos;, &apos;b&amp;#039;day&apos;, &apos;buddy&apos;]
-[&apos;Happy&apos;, &apos;Birthday&apos;, &apos;!&apos;]
-[&apos;hey,&apos;, &apos;happy&apos;, &apos;birthday!&apos;]
-[&apos;Happy&apos;, &apos;bday&apos;, &apos;mama!&apos;]
-[&apos;happy&apos;, &apos;b&amp;#039;day&apos;, &apos;dude&apos;]
-[&apos;Happy&apos;, &apos;birthday!&apos;, &apos;:)&apos;]
-[&apos;happy&apos;, &apos;birthday&apos;, &apos;...:-)&apos;]
-[&apos;happy&apos;, &apos;b&amp;#039;day...&apos;]
-[&apos;happpyy&apos;, &apos;birthdAYYYY...!!!&apos;, &apos;:D&apos;]
-[&apos;happy&apos;, &apos;birthday&apos;, &apos;ra&apos;]
-[&apos;Happy&apos;, &apos;b&amp;#039;day&apos;, &apos;man..:)&apos;]
-[&apos;Happy&apos;, &apos;birthday&apos;, &apos;:)&apos;]
-[&apos;Happy&apos;, &apos;Birthday!!!&apos;]
-[&apos;Happy&apos;, &apos;birthday!&apos;]
-[&apos;happy&apos;, &apos;birthday&apos;, &apos;macha&apos;]
-[&apos;happy&apos;, &apos;b&amp;#039;day!!&apos;]
-[&apos;happy&apos;, &apos;birthday&apos;, &apos;ra...!!&apos;]
-[&apos;Happy&apos;, &apos;Bday..enjoy!!&apos;]
-[&apos;Happy&apos;, &apos;Birthday!&apos;, &apos;:)&apos;]
-[&apos;Happy&apos;, &apos;bday&apos;, &apos;man!&apos;]
-[&apos;happy&apos;, &apos;b&amp;#039;dy&apos;, &apos;mams...&apos;]
-[&apos;Hbd&apos;, &apos;!&apos;, &apos;:-)&apos;]
-[&apos;Happy&apos;, &apos;Birthday&apos;, &apos;Doodh&apos;]
-[&apos;Happy&apos;, &apos;bday....!!!&apos;]
-[&apos;happy&apos;, &apos;bday&apos;, &apos;drlz...&apos;]
-[&apos;Happy&apos;, &apos;Birthday!!&apos;]
-[&apos;happy&apos;, &apos;birthday!!!!&apos;]
-[&apos;happy&apos;, &apos;birthday&apos;, &apos;:)&apos;]
-[&apos;happy&apos;, &apos;birthday!!!&apos;]
-[&apos;Happy&apos;, &apos;Birthday!!!!&apos;]
-[&apos;Happy&apos;, &apos;B&amp;#039;bday&apos;, &apos;da....!!!&apos;]
-[&apos;Happy&apos;, &apos;Birthday&apos;, &apos;:)&apos;]
-[&apos;Happy&apos;, &apos;Birthday&apos;, &apos;da!&apos;]
-[&apos;Happy&apos;, &apos;birthday!&apos;]
-[&apos;Happy&apos;, &apos;Birthday!!!&apos;]
-[&apos;Happy&apos;, &apos;birthday&apos;, &apos;bey!&apos;]
-[&apos;Happy&apos;, &apos;Birthday&apos;, &apos;:o)&apos;]
-[&apos;www.thehindu.com/opinion/op-ed/the-great-number-fetish/article4345243.ece&apos;]
-[&apos;awesome&apos;, &apos;:D...&apos;]
-[&apos;http://www.engadget.com/2012/09/02/stanford-wireless-power-implant/&apos;, &apos;-&apos;, &apos;awesome!&apos;]
-[&apos;awesome&apos;, &apos;:D...&apos;]
-[&apos;None&apos;]
-[&apos;None&apos;]
-[&apos;no&apos;, &apos;description&apos;, &apos;required.&apos;]
-[&apos;:)&apos;]
-[&apos;blag&apos;, &apos;updated&apos;, &apos;:d...&apos;]
-[&apos;epic!&apos;, &apos;:O&apos;, &apos;...&apos;]
-[&apos;nananananananananananana&apos;, &apos;:D&apos;]
-[&apos;:O&apos;, &apos;awesome...&apos;]
-[&apos;LOL&apos;, &apos;awesome&apos;, &apos;:D...&apos;]
-[&apos;http://www.indooratlas.com/&apos;, &apos;-&apos;, &apos;awesome!&apos;]
-[&apos;LOL&apos;, &apos;dude&apos;, &apos;:D...&apos;]
-[&apos;epic!&apos;, &apos;:D&apos;, &apos;...&apos;]
-[&apos;None&apos;]
-[&apos;epic&apos;, &apos;:)&apos;, &apos;....&apos;]
-[&apos;controversial&apos;, &apos;but&apos;, &apos;interesting...&apos;]
-[&apos;.\\\\&apos;, &apos;//&apos;]
-[&apos;EPIC&apos;, &apos;!&apos;, &apos;:D...&apos;]
-[&apos;awesome!&apos;, &apos;:D&apos;]
-[&apos;epic&apos;, &apos;:D&apos;, &apos;...&apos;]
-[&apos;Finally!!!!!!!!!!!&apos;]
-[&apos;epic&apos;, &apos;:D&apos;, &apos;...&apos;]
-[&apos;My&apos;, &apos;bitches&apos;, &apos;-&amp;gt;&apos;]
-[&apos;my&apos;, &apos;niggas&apos;, &apos;:D....&apos;]
-[&apos;epic&apos;, &apos;:D&apos;, &apos;...&apos;]
-[&apos;epic&apos;, &apos;\\m/...&apos;]
-[&apos;epic!&apos;]
-[&apos;respect&apos;, &apos;\\m/&apos;, &apos;:D...&apos;]
-[&apos;simply&apos;, &apos;beautiful&apos;, &apos;:)...&apos;]
-[&apos;\\m/&apos;, &apos;...&apos;]
-[&apos;\\m/&apos;, &apos;...&apos;]
-[&apos;:D&apos;, &apos;...&apos;]
-[&apos;ehh......&apos;, &apos;wassup&apos;, &apos;doc?&apos;]
-[&apos;LOL&apos;, &apos;:D...&apos;]
-[&apos;http://rahulporuri.blogspot.in/&apos;]
-[&apos;Happy&apos;, &apos;Birthday....Haffun..!!:)&apos;]
-[&apos;Happy&apos;, &apos;Bday....!!!&apos;]
-[&apos;hi...rahul....&apos;]
-[&apos;happy&apos;, &apos;bday.&apos;]
-[&apos;happy&apos;, &apos;bday&apos;, &apos;buddy!!!!!&apos;]
-[&apos;happy&apos;, &apos;b&amp;#039;day..!!!&apos;]
-[&apos;happy&apos;, &apos;bday&apos;, &apos;dude!!&apos;]
-[&apos;Happy&apos;, &apos;Birthday.....!!&apos;]
-[&apos;Happy&apos;, &apos;Bday&apos;, &apos;:)&apos;]
-[&apos;happy&apos;, &apos;bday&apos;, &apos;raa....&apos;]
-[&apos;Happy&apos;, &apos;birthday...!!!&apos;]
-[&apos;happy&apos;, &apos;bday!!&apos;]
-[&apos;happy&apos;, &apos;b&amp;#039;day&apos;, &apos;yaar.....&apos;]
-[&apos;happy&apos;, &apos;birthday&apos;, &apos;ra!!!\\&apos;]
-[&apos;Happy&apos;, &apos;Birthday&apos;]
-[&apos;happy&apos;, &apos;b&amp;#039;day&apos;, &apos;:)&apos;]
-[&apos;happy&apos;, &apos;bday&apos;]
-[&apos;happy&apos;, &apos;birthday&apos;, &apos;:)&apos;]
-[&apos;happy&apos;, &apos;birthday&apos;, &apos;ra........&apos;]
-[&apos;Happy&apos;, &apos;B&amp;#039;day&apos;, &apos;ra!!...:)&apos;]
-[&apos;Happy&apos;, &apos;Birthday!&apos;]
-[&apos;Happy&apos;, &apos;birthday&apos;, &apos;!&apos;]
-[&apos;happy&apos;, &apos;birthday&apos;, &apos;:)&apos;]
-[&apos;happie&apos;, &apos;b&amp;#039;day&apos;, &apos;macha!!&apos;]
-[&apos;Happy&apos;, &apos;birthday&apos;]
-[&apos;Happy&apos;, &apos;birthday&apos;, &apos;ra..!&apos;]
-[&apos;happy&apos;, &apos;bday.....!&apos;]
-[&apos;happy&apos;, &apos;bday&apos;, &apos;ra...&apos;]
-[&apos;Birthday&apos;, &apos;wishes,&apos;, &apos;man!&apos;]
-[&apos;happy&apos;, &apos;birthday&apos;]
-[&apos;Happy&apos;, &apos;birthday&apos;, &apos;ra...&apos;]
-[&apos;happy&apos;, &apos;b&amp;#039;day&apos;, &apos;ra....&apos;]
-[&apos;happy&apos;, &apos;bdy&apos;, &apos;mama&apos;]
-[&apos;happy&apos;, &apos;b&amp;#039;day&apos;, &apos;bro&apos;]
-[&apos;Happy&apos;, &apos;Birthday&apos;, &apos;Rahul&apos;]
-[&apos;happy&apos;, &apos;birthday&apos;, &apos;ra!!!!&apos;]
-[&apos;HaPpY&apos;, &apos;bDaY...:)&apos;]
-[&apos;Happy&apos;, &apos;Birthday!!!!!!!&apos;]
-[&apos;happy&apos;, &apos;birthday.&apos;]
-[&apos;Happy&apos;, &apos;Birthday&apos;, &apos;dude!&apos;]
-[&apos;Happy&apos;, &apos;Birthday&apos;, &apos;man!&apos;]
-[&apos;Happy&apos;, &apos;B&amp;#039;day&apos;, &apos;ra&apos;]
-[&apos;happy&apos;, &apos;bday&apos;, &apos;rahul&apos;]
-[&apos;happy&apos;, &apos;b&amp;#039;day&apos;]
-[&apos;happy&apos;, &apos;birthday&apos;, &apos;mama&apos;]
-[&apos;happy&apos;, &apos;bday&apos;, &apos;dude&apos;]
-[&apos;happy&apos;, &apos;bday&apos;]
-[&apos;\\m/&apos;, &apos;...&apos;]
-[&apos;None&apos;]
-[&apos;hmm....&apos;, &apos;interesting....&apos;]
-[&apos;:)&apos;, &apos;....&apos;]
-[&apos;Jam&amp;#039;s&apos;, &apos;Drams&apos;, &apos;\\m/&apos;]
-[&apos;LOL&apos;, &apos;...&apos;]
-[&apos;intelesting&apos;, &apos;.....&apos;]
-[&apos;aaaaaaaawesome&apos;, &apos;:O........&apos;]
-[&apos;LOL&apos;, &apos;:D....&apos;]
-[&apos;:D&apos;, &apos;LOL&apos;, &apos;,...&apos;]
-[&apos;awesome&apos;, &apos;:D....&apos;]
-[&apos;WTF&apos;, &apos;!!!&apos;]
-[&apos;batman&apos;, &apos;!!!!&apos;]
-[&apos;browsers&apos;, &apos;:D&apos;, &apos;....&apos;]
-[&apos;finally,&apos;]
-[&apos;super-frigging-awesomeness&apos;, &apos;:D...&apos;]
-[&apos;Why&apos;, &apos;bunked&apos;, &apos;lab?&apos;]
-[&apos;None&apos;]
-[&apos;:O&apos;, &apos;awesome&apos;, &apos;...&apos;]
-[&apos;:D&apos;, &apos;...&apos;]
-[&apos;:o&apos;, &apos;...&apos;]
-[&apos;:D&apos;, &apos;..&apos;]
-[&apos;http://www.npr.org/2011/08/17/139681851/scientists-crack-the-physics-of-coffee-rings?ps=cprs&apos;]
-[&apos;http://rahulporuri.blogspot.com/&apos;]
-[&apos;LAWL&apos;, &apos;:D&apos;]
-[&apos;http://www.20thingsilearned.com/en-US/home&apos;]
-[&apos;http://en.wikinews.org/wiki/Controversy_raised_about_2009_Nobel_Prize_in_Physics&apos;]
-[&apos;None&apos;]
-[&apos;happy&apos;, &apos;birthdayy&apos;, &apos;:)&apos;]
-[&apos;happy&apos;, &apos;b&amp;#039;day!!!&apos;]
-[&apos;happy&apos;, &apos;b&amp;#039;day&apos;, &apos;mama...&apos;]
-[&apos;happy&apos;, &apos;birthday&apos;, &apos;man..!!&apos;]
-[&apos;Happy&apos;, &apos;Birthday.....:):)&apos;]
-[&apos;Happy&apos;, &apos;B&amp;#039;Day&apos;, &apos;dude...............&apos;]
-[&apos;Happy&apos;, &apos;Birthday&apos;, &apos;Rahul!&apos;]
-[&apos;HAPPY&apos;, &apos;BIRTHDAY!&apos;]
-[&apos;Happy&apos;, &apos;Birthday&apos;, &apos;Doodh!!!&apos;]
-[&apos;Happy&apos;, &apos;birthday&apos;, &apos;dude!&apos;]
-[&apos;happy&apos;, &apos;bday!!!!&apos;]
-[&apos;Happy&apos;, &apos;Birthday&apos;, &apos;dude!&apos;]
-[&apos;happy&apos;, &apos;birthday&apos;, &apos;ra&apos;]
-[&apos;happy&apos;, &apos;birthday&apos;, &apos;ra&apos;]
-[&apos;happy&apos;, &apos;bthday...&apos;]
-[&apos;happy&apos;, &apos;birthday&apos;, &apos;ra&apos;]
-[&apos;happy&apos;, &apos;birthday&apos;, &apos;mama...&apos;]
-[&apos;None&apos;]
-[&apos;None&apos;]
-[&apos;lol&apos;, &apos;....&apos;]
-[&apos;www.shaastra.org&apos;, &apos;,,,,,&apos;]
-[&apos;http://www.thefuntheory.com/&apos;, &apos;-&apos;, &apos;awesomeeeee......&apos;]
-[&apos;thnx&apos;, &apos;dude...:D&apos;]
-[&apos;:P&apos;]
-[&apos;hii&apos;, &apos;!!!!&apos;]
-[&apos;hi&apos;, &apos;where&apos;, &apos;r&apos;]
-[&apos;grrr.....&apos;]
-[&apos;happy&apos;, &apos;b&amp;#039;day&apos;, &apos;da.......&apos;]
-[&apos;happy&apos;, &apos;birthday!!&apos;]
-[&apos;Happy&apos;, &apos;b&amp;#039;day&apos;, &apos;bro...!!!!&apos;]
-[&apos;School&apos;, &apos;rahul&apos;, &apos;!&apos;]
-[&apos;what&amp;#039;s&apos;, &apos;cookin&apos;, &apos;?&apos;]
-[&apos;None&apos;]
-[&apos;None&apos;]
+<div class="output_area"><div class="prompt output_prompt">
+    Out[4]:</div>
 
+
+<div class="output_text output_subarea output_pyout">
+<pre>
+[[&apos;Monday,&apos;, &apos;January&apos;, &apos;11,&apos;, &apos;2016&apos;, &apos;at&apos;, &apos;1:13am&apos;, &apos;UTC+05:30&apos;],
+ [&apos;Sunday,&apos;, &apos;January&apos;, &apos;10,&apos;, &apos;2016&apos;, &apos;at&apos;, &apos;6:32pm&apos;, &apos;UTC+05:30&apos;],
+ [&apos;Sunday,&apos;, &apos;January&apos;, &apos;10,&apos;, &apos;2016&apos;, &apos;at&apos;, &apos;5:53pm&apos;, &apos;UTC+05:30&apos;],
+ [&apos;Saturday,&apos;, &apos;January&apos;, &apos;9,&apos;, &apos;2016&apos;, &apos;at&apos;, &apos;5:24pm&apos;, &apos;UTC+05:30&apos;],
+ [&apos;Friday,&apos;, &apos;January&apos;, &apos;1,&apos;, &apos;2016&apos;, &apos;at&apos;, &apos;9:51pm&apos;, &apos;UTC+05:30&apos;],
+ [&apos;Thursday,&apos;, &apos;December&apos;, &apos;31,&apos;, &apos;2015&apos;, &apos;at&apos;, &apos;7:40pm&apos;, &apos;UTC+05:30&apos;],
+ [&apos;Sunday,&apos;, &apos;December&apos;, &apos;27,&apos;, &apos;2015&apos;, &apos;at&apos;, &apos;10:46am&apos;, &apos;UTC+05:30&apos;],
+ [&apos;Friday,&apos;, &apos;December&apos;, &apos;25,&apos;, &apos;2015&apos;, &apos;at&apos;, &apos;6:29pm&apos;, &apos;UTC+05:30&apos;],
+ [&apos;Friday,&apos;, &apos;December&apos;, &apos;25,&apos;, &apos;2015&apos;, &apos;at&apos;, &apos;6:24pm&apos;, &apos;UTC+05:30&apos;],
+ [&apos;Tuesday,&apos;, &apos;December&apos;, &apos;22,&apos;, &apos;2015&apos;, &apos;at&apos;, &apos;8:30am&apos;, &apos;UTC+05:30&apos;]]
 </pre>
 </div>
+
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[5]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="n">dayList</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">dateList</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">monthList</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">yearList</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">string</span> <span class="ow">in</span> <span class="n">dates</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+                <span class="n">dayList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">string</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                <span class="n">dateList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">string</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+                <span class="n">monthList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">string</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+                <span class="n">yearList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">string</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+        <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+                <span class="k">print</span> <span class="n">string</span>                
+</pre></div>
+
+</div>
 </div>
 </div>
 
@@ -2111,7 +1845,38 @@ In&nbsp;[6]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[10]:
+In&nbsp;[7]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="k">print</span> <span class="n">dayListDict</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+{&apos;Tuesday,&apos;: 348, &apos;Wednesday,&apos;: 361, &apos;Monday,&apos;: 347, &apos;Friday,&apos;: 339, &apos;Sunday,&apos;: 397, &apos;Thursday,&apos;: 297, &apos;Saturday,&apos;: 278}
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[8]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2144,7 +1909,38 @@ In&nbsp;[10]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[16]:
+In&nbsp;[9]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="k">print</span> <span class="n">monthListDict</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+{&apos;February&apos;: 422, &apos;October&apos;: 220, &apos;March&apos;: 183, &apos;August&apos;: 144, &apos;April&apos;: 115, &apos;September&apos;: 247, &apos;January&apos;: 122, &apos;June&apos;: 219, &apos;May&apos;: 166, &apos;December&apos;: 231, &apos;November&apos;: 115, &apos;July&apos;: 183}
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[10]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2164,7 +1960,7 @@ In&nbsp;[16]:
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
- 122 422 183 115
+122 422 183 115
 166 219 183 144
 247 220 115 231
 
@@ -2179,7 +1975,38 @@ In&nbsp;[16]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[18]:
+In&nbsp;[11]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="k">print</span> <span class="n">yearListDict</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+{&apos;2009&apos;: 51, &apos;2015&apos;: 204, &apos;2014&apos;: 252, &apos;2016&apos;: 5, &apos;2011&apos;: 474, &apos;2010&apos;: 225, &apos;2013&apos;: 661, &apos;2012&apos;: 495}
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[12]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2198,7 +2025,7 @@ In&nbsp;[18]:
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
- 51 225 474 495
+51 225 474 495
 661 252 204
 
 </pre>
@@ -2212,11 +2039,11 @@ In&nbsp;[18]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[12]:
+In&nbsp;[13]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">dates</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
+<div class="highlight"><pre><span class="k">print</span> <span class="n">dateListDict</span>
 </pre></div>
 
 </div>
@@ -2227,22 +2054,13 @@ In&nbsp;[12]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[12]:</div>
-
-
-<div class="output_text output_subarea output_pyout">
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
 <pre>
-[[&apos;Monday,&apos;, &apos;January&apos;, &apos;11,&apos;, &apos;2016&apos;, &apos;at&apos;, &apos;1:13am&apos;, &apos;UTC+05:30&apos;],
- [&apos;Sunday,&apos;, &apos;January&apos;, &apos;10,&apos;, &apos;2016&apos;, &apos;at&apos;, &apos;6:32pm&apos;, &apos;UTC+05:30&apos;],
- [&apos;Sunday,&apos;, &apos;January&apos;, &apos;10,&apos;, &apos;2016&apos;, &apos;at&apos;, &apos;5:53pm&apos;, &apos;UTC+05:30&apos;],
- [&apos;Saturday,&apos;, &apos;January&apos;, &apos;9,&apos;, &apos;2016&apos;, &apos;at&apos;, &apos;5:24pm&apos;, &apos;UTC+05:30&apos;],
- [&apos;Aaahahahahaha&apos;, &apos;omg&apos;, &apos;this&apos;, &apos;is&apos;, &apos;amazing!&apos;, &apos;:D&apos;],
- [&apos;Friday,&apos;, &apos;January&apos;, &apos;1,&apos;, &apos;2016&apos;, &apos;at&apos;, &apos;9:51pm&apos;, &apos;UTC+05:30&apos;],
- [&apos;Thursday,&apos;, &apos;December&apos;, &apos;31,&apos;, &apos;2015&apos;, &apos;at&apos;, &apos;7:40pm&apos;, &apos;UTC+05:30&apos;]]
+{&apos;23,&apos;: 62, &apos;17,&apos;: 72, &apos;25,&apos;: 52, &apos;11,&apos;: 82, &apos;27,&apos;: 118, &apos;13,&apos;: 86, &apos;19,&apos;: 60, &apos;31,&apos;: 88, &apos;21,&apos;: 62, &apos;15,&apos;: 74, &apos;8,&apos;: 63, &apos;18,&apos;: 109, &apos;4,&apos;: 60, &apos;2,&apos;: 71, &apos;16,&apos;: 59, &apos;22,&apos;: 71, &apos;9,&apos;: 89, &apos;10,&apos;: 79, &apos;24,&apos;: 63, &apos;7,&apos;: 66, &apos;12,&apos;: 57, &apos;26,&apos;: 62, &apos;30,&apos;: 59, &apos;6,&apos;: 294, &apos;14,&apos;: 56, &apos;20,&apos;: 38, &apos;28,&apos;: 54, &apos;29,&apos;: 74, &apos;5,&apos;: 45, &apos;3,&apos;: 89, &apos;1,&apos;: 53}
+
 </pre>
 </div>
-
 </div>
 
 </div>
@@ -2256,26 +2074,7 @@ In&nbsp;[]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">dayList</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[]:
-</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class="highlight"><pre><span class="k">print</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">dayList</span><span class="p">))</span>
-<span class="k">print</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">([</span><span class="n">string</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">string</span> <span class="ow">in</span> <span class="n">dates</span><span class="p">[</span><span class="mi">3</span><span class="p">:]]))</span>
-<span class="k">print</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">([</span><span class="n">string</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="k">for</span> <span class="n">string</span> <span class="ow">in</span> <span class="n">dates</span><span class="p">[</span><span class="mi">3</span><span class="p">:]]))</span>
-<span class="k">print</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">([</span><span class="n">string</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="k">for</span> <span class="n">string</span> <span class="ow">in</span> <span class="n">dates</span><span class="p">[</span><span class="mi">3</span><span class="p">:]]))</span>
+<div class="highlight"><pre> 
 </pre></div>
 
 </div>
