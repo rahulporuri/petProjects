@@ -32,3 +32,21 @@ view2 = View(Group(Item(name = 'T')),
 
 visphys_inst = visphys()
 visphys_inst.configure_traits(view = view2)
+
+"""
+import os
+importList = []
+for file in os.listdir('.'):
+	if os.path.splitext(file)[1] == '.py':
+		importList.append(os.path.splitext(file)[0])
+
+modules = map(__import__, importList)
+myattr = getattr(modules[0], importList[0])
+
+http://stackoverflow.com/questions/301134/dynamic-module-import-in-python
+http://stackoverflow.com/questions/1057431/loading-all-modules-in-a-folder-in-python
+http://www.diveintopython.net/functional_programming/dynamic_import.html
+http://stackoverflow.com/questions/11108628/python-dynamic-from-import
+http://www.blog.pythonlibrary.org/2012/07/31/advanced-python-how-to-dynamically-load-modules-or-classes/
+
+"""

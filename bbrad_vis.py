@@ -51,6 +51,6 @@ class bbrad(HasTraits):
 		print 'the temperature of the blackbody emitter : T has been changed from %s to %s ' % (old, new)
 		self.eval_bbrad_plot()
 
-if __name_ == "__main__":
+if __name__ == "__main__":
 	bbrad_inst = bbrad()
 	bbrad_inst.configure_traits()
