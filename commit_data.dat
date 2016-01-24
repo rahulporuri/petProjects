@@ -1,3 +1,7 @@
+::::::::::::::
+/home/rahulporuri/Github/arXiv/.git/logs/HEAD
+::::::::::::::
+0000000000000000000000000000000000000000 3a483224638f6f423f93b9122b58c7a5b0afb286 rahul.poruri <rahul.poruri@gmail.com> 1444731474 +0530	clone: from https://github.com/rahulporuri/arXiv.git
 3a483224638f6f423f93b9122b58c7a5b0afb286 72953cfa2b2698ac88422c1ef65ba81214ff6d94 rahul.poruri <rahul.poruri@gmail.com> 1444732893 +0530	commit: first commit - papers this october
 72953cfa2b2698ac88422c1ef65ba81214ff6d94 84427c8f0136e8bd3b4a7782b2bb2b3033486537 rahul.poruri <rahul.poruri@gmail.com> 1444842952 +0530	commit: added papers from SKA science
 84427c8f0136e8bd3b4a7782b2bb2b3033486537 63c42c729362cb3e7f7f06f47fac4bd91428e3a2 rahul.poruri <rahul.poruri@gmail.com> 1445013776 +0530	commit: ---
@@ -13,6 +17,10 @@ e7d1b8ce9f56fb8713a8626fca3fb826c516707c c868929055778a4a9c47391cb13860361ee7bec
 c868929055778a4a9c47391cb13860361ee7becd 9887dabfb68e02869279314815c58eedf2aa86ac rahul.poruri <rahul.poruri@gmail.com> 1447175999 +0530	commit: week 2 of nov
 9887dabfb68e02869279314815c58eedf2aa86ac 22d8562ce08cdecfa6cbb6c01d6055ff67187e23 rahul.poruri <rahul.poruri@gmail.com> 1447440749 +0530	commit: ...
 22d8562ce08cdecfa6cbb6c01d6055ff67187e23 f763887b28ae73eb2274bb8b1366e562d68d1470 rahul.poruri <rahul.poruri@gmail.com> 1448195013 +0530	commit: nov 22
+::::::::::::::
+/home/rahulporuri/Github/astro_data_projects/.git/logs/HEAD
+::::::::::::::
+0000000000000000000000000000000000000000 2d4010b400eb81badd75b6dee6d7ab82d10fb9c3 rahulporuri <rahul.poruri@gmail.com> 1417504753 +0530	clone: from https://github.com/rahulporuri/astro_data_projects.git
 2d4010b400eb81badd75b6dee6d7ab82d10fb9c3 e363c42c7cf6e6cd79cf6593f515184d0641b50a rahulporuri <rahul.poruri@gmail.com> 1417533483 +0530	commit: ppt on git and python
 e363c42c7cf6e6cd79cf6593f515184d0641b50a bdbd4eb1cbf1b693746fec2b8ba2d135e28fbc12 rahulporuri <rahul.poruri@gmail.com> 1417803085 +0530	commit: an introduction to python .ipynb and .html files - Ver 1
 bdbd4eb1cbf1b693746fec2b8ba2d135e28fbc12 084567d2d2f7007deda6affdd3d0997acc8c633b rahulporuri <rahul.poruri@gmail.com> 1418476366 +0530	commit: update to the intro to python ipynb file
@@ -43,7 +51,15 @@ d257aa0e91e64674d405626746810b4ac6b3476e f6d0373e5bdb6db370b109d3ae56c121692b6ad
 f6d0373e5bdb6db370b109d3ae56c121692b6ada 990521b94449030d9c4de4674725bd43abda605f rahulporuri <rahul.poruri@gmail.com> 1422105087 +0530	commit: updated variable star ipynb with cepheid variable data
 990521b94449030d9c4de4674725bd43abda605f 8ccf88466a71b888e6b8cb78b968dc3e3ca38a70 rahulporuri <rahul.poruri@gmail.com> 1422356001 +0530	commit: variable stars - update
 8ccf88466a71b888e6b8cb78b968dc3e3ca38a70 af3c9f9c8c60d9812460c5b4ae3887f94488b1c0 rahul.poruri <rahul.poruri@gmail.com> 1444147382 +0530	commit: cleanup and updates
+::::::::::::::
+/home/rahulporuri/Github/computational_physics/.git/logs/HEAD
+::::::::::::::
+0000000000000000000000000000000000000000 4bbf48290c69b036685916b4c8311dd4e9d60d57 rahul.poruri <rahul.poruri@gmail.com> 1429106858 +0530	clone: from https://github.com/rahulporuri/computational_physics.git
 4bbf48290c69b036685916b4c8311dd4e9d60d57 709b972d0608ffaa439962fd2df070dd12985856 rahul.poruri <rahul.poruri@gmail.com> 1431513321 +0530	commit: molecular dynamics code?
+::::::::::::::
+/home/rahulporuri/Github/course_projects/.git/logs/HEAD
+::::::::::::::
+0000000000000000000000000000000000000000 ccc58b8bd654b21792fcbf8b08fb457b7bf07b34 rahul.poruri <rahul.poruri@gmail.com> 1427458931 +0530	clone: from https://github.com/rahulporuri/course_projects.git
 ccc58b8bd654b21792fcbf8b08fb457b7bf07b34 b2e7a3ffb42b7710d941928aec471383ade32c1a rahul.poruri <rahul.poruri@gmail.com> 1427459335 +0530	commit: to-do list
 b2e7a3ffb42b7710d941928aec471383ade32c1a c6f9e4a5adc6c4f77af24c34ead5aac99c828fbb rahul.poruri <rahul.poruri@gmail.com> 1427823900 +0530	commit: readme update
 c6f9e4a5adc6c4f77af24c34ead5aac99c828fbb 95eb4faae3b2600131efd315e37bd88223d227f2 rahul.poruri <rahul.poruri@gmail.com> 1428593656 +0530	commit: specific projects in courses
@@ -59,6 +75,10 @@ c96930b4ce9f644320a630cff70547ae15a272d1 a37cf9d8fbc36f769fd37609225b0ed1def1ae5
 a37cf9d8fbc36f769fd37609225b0ed1def1ae5c 06cd130f705325a015b5831a2ddc38586040921b rahul.poruri <rahul.poruri@gmail.com> 1429718493 +0530	commit: diffusion update
 06cd130f705325a015b5831a2ddc38586040921b c11a1432c1db2fe3676cf342e563e40dbb915afc rahul.poruri <rahul.poruri@gmail.com> 1430046915 +0530	commit: cleanup
 c11a1432c1db2fe3676cf342e563e40dbb915afc d7899120ad43fd1d6126e758fbe35b9a35f44e3e rahul.poruri <rahul.poruri@gmail.com> 1444147273 +0530	commit: cleanup and updates
+::::::::::::::
+/home/rahulporuri/Github/data_structs_and_algos/.git/logs/HEAD
+::::::::::::::
+0000000000000000000000000000000000000000 8523038122e1bd314c96fa88e5430a20bf89aad6 rahul.poruri <rahul.poruri@gmail.com> 1441119278 +0530	clone: from https://github.com/rahulporuri/data_structs_and_algos.git
 8523038122e1bd314c96fa88e5430a20bf89aad6 9e88d3f788dfe4cb3ed3781ec08d5321df56ecc2 rahul.poruri <rahul.poruri@gmail.com> 1441119445 +0530	commit: merge sort basics
 9e88d3f788dfe4cb3ed3781ec08d5321df56ecc2 e5882028692c94e5ac72eb1eb572c2afa402c0df rahul.poruri <rahul.poruri@gmail.com> 1441209086 +0530	commit: readme update
 e5882028692c94e5ac72eb1eb572c2afa402c0df 0ec279f69cd3ad4f8a381946e4cab0cdb760a475 rahul.poruri <rahul.poruri@gmail.com> 1441214299 +0530	commit: insertion sort - still in the works
@@ -67,6 +87,10 @@ e5882028692c94e5ac72eb1eb572c2afa402c0df 0ec279f69cd3ad4f8a381946e4cab0cdb760a47
 ad2be3c39b874969dd0edc8410e7a93e84bef5ec faeeb5c0366005ba7e68994eaf9090de1a9780f6 rahul.poruri <rahul.poruri@gmail.com> 1443515282 +0530	commit: stacks
 faeeb5c0366005ba7e68994eaf9090de1a9780f6 02961bc58725ced7fd57d3d065480557c218738c rahul.poruri <rahul.poruri@gmail.com> 1444147188 +0530	commit: linked lists
 02961bc58725ced7fd57d3d065480557c218738c 49ff0abe7560b0e736747dfe388906c4c1855749 rahul.poruri <rahul.poruri@gmail.com> 1450692029 +0530	commit: insertion sort
+::::::::::::::
+/home/rahulporuri/Github/fun_with_physics_models/.git/logs/HEAD
+::::::::::::::
+0000000000000000000000000000000000000000 0c523d0e615209a0680682988572c2f3f63c63e3 python <python@astronut.(none)> 1412950888 +0530	clone: from https://github.com/rahulporuri/fun_with_physics_models.git
 0c523d0e615209a0680682988572c2f3f63c63e3 cdac4c9f0eb05f63a263f6533ad937c4730237f7 rahulporuri <rahul.poruri@gmail.com> 1412951208 +0530	commit: readme update
 cdac4c9f0eb05f63a263f6533ad937c4730237f7 de73a7c8c411141ace6ea1ec7243e0689427eb65 rahulporuri <rahul.poruri@gmail.com> 1412974309 +0530	commit: fourier transform assignment
 de73a7c8c411141ace6ea1ec7243e0689427eb65 14c5048b6aa4012d7f261780cb1832844d485141 rahulporuri <rahul.poruri@gmail.com> 1413024993 +0530	commit: update to fourier transform assgn
@@ -114,6 +138,10 @@ df5fbd711fafdd871a00e9b15f7c43f72945fd54 d1537420f4d1832bf9730da21a9003215d9c611
 d1537420f4d1832bf9730da21a9003215d9c6113 8b7eaca1eec81373fd30c1560aff17a906ef36f1 rahul.poruri <rahul.poruri@gmail.com> 1429363906 +0530	commit: logistic map and poisson equation
 8b7eaca1eec81373fd30c1560aff17a906ef36f1 46c44c66716a7b5599616d9af2e646bd1dfba220 rahul.poruri <rahul.poruri@gmail.com> 1429718357 +0530	commit: diffusion ising implicit, crank-nicholson and malayajas chaos map, logistic bifurcation
 46c44c66716a7b5599616d9af2e646bd1dfba220 bf6ae8f6b1eb2a071effca848336b81f009b029d rahul.poruri <rahul.poruri@gmail.com> 1444147130 +0530	commit: cleanup and updates
+::::::::::::::
+/home/rahulporuri/Github/math_on_a_comp/.git/logs/HEAD
+::::::::::::::
+0000000000000000000000000000000000000000 1a4b88ba35968d81d9215e519621d4c0b84d7519 rahul.poruri <rahul.poruri@gmail.com> 1438626324 +0530	clone: from https://github.com/rahulporuri/math_on_a_comp.git
 1a4b88ba35968d81d9215e519621d4c0b84d7519 59616f12606244f06b34405d83a1b371f3301b65 rahul.poruri <rahul.poruri@gmail.com> 1438629647 +0530	commit: week1_aug3 - plotting and visualization
 59616f12606244f06b34405d83a1b371f3301b65 e9b56d16d6a9cd59eeb4d1b349955e91ebba5772 rahul.poruri <rahul.poruri@gmail.com> 1438629751 +0530	commit: readme update
 e9b56d16d6a9cd59eeb4d1b349955e91ebba5772 6cf15b898192e42c9ac44f118dc5526f92d8223f rahul.poruri <rahul.poruri@gmail.com> 1439429799 +0530	commit: week2
@@ -144,6 +172,10 @@ d81e52efd8b049cc157c61666b6c88f92acf1a1f 5c00696a6efaef202f04455f2cb96e2c1d7c383
 5c00696a6efaef202f04455f2cb96e2c1d7c383c 29eac3117a52ed76ee65db43ead0a272ee16b12d rahul.poruri <rahul.poruri@gmail.com> 1447605073 +0530	commit: fixed problems in assgn. 6 and solved assgn. 8-II
 29eac3117a52ed76ee65db43ead0a272ee16b12d 3ab0f150c3e1458dfb50a714d4e3780e4898bb25 rahul.poruri <rahul.poruri@gmail.com> 1447607640 +0530	commit: complete
 3ab0f150c3e1458dfb50a714d4e3780e4898bb25 94cd8cf1afda830fee7170ae68a42643125046eb rahul.poruri <rahul.poruri@gmail.com> 1447650190 +0530	commit: assgn 10
+::::::::::::::
+/home/rahulporuri/Github/num_methods_in_prog/.git/logs/HEAD
+::::::::::::::
+0000000000000000000000000000000000000000 e3ec2f9b9eb0da7ff96186df6de35508621a4cc7 rahul.poruri <rahul.poruri@gmail.com> 1426180605 +0530	clone: from https://github.com/rahulporuri/num_methods_in_prog.git
 e3ec2f9b9eb0da7ff96186df6de35508621a4cc7 1fbfc79088067f953518d25ae9c153ec2e160ea8 rahul.poruri <rahul.poruri@gmail.com> 1426181881 +0530	commit: code update - number of function calls, remove the use of pow(), change for loop to while loop
 1fbfc79088067f953518d25ae9c153ec2e160ea8 2ace605d8a375b9e40ae03221c262afb96694862 rahul.poruri <rahul.poruri@gmail.com> 1426188757 +0530	commit: defined coefficients individually
 2ace605d8a375b9e40ae03221c262afb96694862 c4980d5cd81dfad1734460b60b611daa0ecb996e rahul.poruri <rahul.poruri@gmail.com> 1426189864 +0530	commit: cleanup
@@ -179,6 +211,10 @@ c9d9e74ce837d1bac45a38289cbd13d2db6bf935 2b85e3b2c4a47e0b7b2a520f0f04fd95a4d9f5f
 81845cef7ffaf529c14337c9e0bc983b7687311b 36eed65f4f7b20a10f1c3506ee8d70efc50a7854 rahul.poruri <rahul.poruri@gmail.com> 1431104954 +0530	commit: end sem
 36eed65f4f7b20a10f1c3506ee8d70efc50a7854 d2aa8069db16cde3c8ea15216afce771cc1a0020 rahul.poruri <rahul.poruri@gmail.com> 1444147084 +0530	commit: update?
 d2aa8069db16cde3c8ea15216afce771cc1a0020 d4397324e401031c2b8718ca80e821cbe4dde8b2 rahul.poruri <rahul.poruri@gmail.com> 1444189008 +0530	commit: diffusion 3d plots
+::::::::::::::
+/home/rahulporuri/Github/peepees/.git/logs/HEAD
+::::::::::::::
+0000000000000000000000000000000000000000 17bfcbee1accdb411d4908e8393de42fab1e21c7 rahul.poruri <rahul.poruri@gmail.com> 1452664144 +0530	clone: from https://github.com/rahulporuri/peepees.git
 17bfcbee1accdb411d4908e8393de42fab1e21c7 8de5ebda8e9d43bcbb6893f6205c1138fcf68c23 rahul.poruri <rahul.poruri@gmail.com> 1452664187 +0530	commit: arxiv stats peepee
 8de5ebda8e9d43bcbb6893f6205c1138fcf68c23 40b6811b7b6db50b593ae7beb58004e487a2811f rahul.poruri <rahul.poruri@gmail.com> 1452664264 +0530	commit: bookmarks stats peepee
 40b6811b7b6db50b593ae7beb58004e487a2811f cd8343227964d9b634acb6155d09f34683b9ebdb rahul.poruri <rahul.poruri@gmail.com> 1452664309 +0530	commit: pocket stats peepee
@@ -196,6 +232,11 @@ f2ca638c54974bb6b7d907137752f5e8162fd8e2 650c6f627ac3ba8f3f64fd1d081c88eef11faa7
 389254c6755ef257b5d0551d5fe281cd57731cdd cc5bae282d4729acfd2a45a17440b98ac714ac25 rahul.poruri <rahul.poruri@gmail.com> 1452878883 +0530	commit: fb stats
 cc5bae282d4729acfd2a45a17440b98ac714ac25 c1598911ae38cf6c41ce783cb464783d30260133 rahul.poruri <rahul.poruri@gmail.com> 1452880641 +0530	commit: cleaned up code to cleanup noise
 c1598911ae38cf6c41ce783cb464783d30260133 df41bc9d077812379891f6031fa4065693fe2b63 rahul.poruri <rahul.poruri@gmail.com> 1453356449 +0530	commit: fb stats and use of os to get .py files
+df41bc9d077812379891f6031fa4065693fe2b63 8c23241048ef2d0e8cb1cbfa7080924da2f359c3 rahul.poruri <rahul.poruri@gmail.com> 1453400080 +0530	commit: git stats
+::::::::::::::
+/home/rahulporuri/Github/project_work/.git/logs/HEAD
+::::::::::::::
+0000000000000000000000000000000000000000 4d2b2eb954c58a79a888f287b20cd22554c4224f rahul.poruri <rahul.poruri@gmail.com> 1431767643 +0530	clone: from https://github.com/rahulporuri/project_work.git
 4d2b2eb954c58a79a888f287b20cd22554c4224f 59ba903facdf4dd64ecac9f0ac7621f3352b806d rahul.poruri <rahul.poruri@gmail.com> 1431784093 +0530	commit: ground work
 59ba903facdf4dd64ecac9f0ac7621f3352b806d 64344de6a02dc463d1d0f2e7a77f77a9f8f449e4 rahul.poruri <rahul.poruri@gmail.com> 1431864397 +0530	commit: partially working soln
 64344de6a02dc463d1d0f2e7a77f77a9f8f449e4 4a3b6cf2e1afc3e1a0fbbbcfd934102836411c41 rahul.poruri <rahul.poruri@gmail.com> 1431921496 +0530	commit: almost there
@@ -332,8 +373,20 @@ be4baaefd886d44e0476f0970d0572c8f762ff79 6a4cffc6c83e37cd644eea9c902d9a7356b84b5
 06b53f056cbb89ff208cb97ee26b2ca8f246e667 3208755652fc9e688b4b81c857320b85ee39bd04 rahul.poruri <rahul.poruri@gmail.com> 1447258598 +0530	commit: working tr lt code
 3208755652fc9e688b4b81c857320b85ee39bd04 7a641d12a937993bcf8da257c3c4182874b472fe rahul.poruri <rahul.poruri@gmail.com> 1449479850 +0530	commit: cleanup
 7a641d12a937993bcf8da257c3c4182874b472fe 383b4945d940aa992f9696109debbccc62fa1882 rahul.poruri <rahul.poruri@gmail.com> 1449480491 +0530	commit: major thesis
+::::::::::::::
+/home/rahulporuri/Github/python_astro/.git/logs/HEAD
+::::::::::::::
+0000000000000000000000000000000000000000 03727bfc54d15a140eb017d743a1d7f85ace1dd5 rahul.poruri <rahul.poruri@gmail.com> 1429102868 +0530	clone: from https://github.com/rahulporuri/python_astro.git
 03727bfc54d15a140eb017d743a1d7f85ace1dd5 1bd4a3659da441dba52c73d93949b2d9bde2a051 rahul.poruri <rahul.poruri@gmail.com> 1444146751 +0530	commit: radiation pattern
+::::::::::::::
+/home/rahulporuri/Github/quasar_colors/.git/logs/HEAD
+::::::::::::::
+0000000000000000000000000000000000000000 ccd0d9d5b6853972931697b957c3844d7baab139 rahul.poruri <rahul.poruri@gmail.com> 1429107759 +0530	clone: from https://github.com/rahulporuri/quasar_colors.git
 ccd0d9d5b6853972931697b957c3844d7baab139 917c159a0f2bf406f8c139fa9f831dd03779d926 rahul.poruri <rahul.poruri@gmail.com> 1444146861 +0530	commit: project report
+::::::::::::::
+/home/rahulporuri/Github/rahulporuri.github.io/.git/logs/HEAD
+::::::::::::::
+0000000000000000000000000000000000000000 f8356bb9beb258403bee55c2eaebd48a576d9af0 rahul.poruri <rahul.poruri@gmail.com> 1427447342 +0530	clone: from https://github.com/rahulporuri/rahulporuri.github.io.git
 f8356bb9beb258403bee55c2eaebd48a576d9af0 59dc545db3a3fe8701e8a86c1996407253feeae7 rahul.poruri <rahul.poruri@gmail.com> 1427455556 +0530	commit: colorful galaxy
 59dc545db3a3fe8701e8a86c1996407253feeae7 9a01be62bc08e4986cf7cc0a383f4f51e2964553 rahul.poruri <rahul.poruri@gmail.com> 1428082661 +0530	commit: electric and magnetic field motion of particle
 9a01be62bc08e4986cf7cc0a383f4f51e2964553 1e37542988da7dcc6c6f2a54bfb4d303128eb0cb rahul.poruri <rahul.poruri@gmail.com> 1428311796 +0530	commit: upynb updates
@@ -344,10 +397,18 @@ f8356bb9beb258403bee55c2eaebd48a576d9af0 59dc545db3a3fe8701e8a86c1996407253feeae
 6a127a70b849e3e154852d8e36267cb10f9e0bfc 06fd9fb96b11a12b4cbe280db71605f8753f773d rahul.poruri <rahul.poruri@gmail.com> 1442389506 +0530	commit: updated mini thesis report
 06fd9fb96b11a12b4cbe280db71605f8753f773d bf8c2e25626f7d4dd88d979e4a245220d8f5e836 rahul.poruri <rahul.poruri@gmail.com> 1444146909 +0530	commit: anand - summer project report
 bf8c2e25626f7d4dd88d979e4a245220d8f5e836 990a2e5c50a9fd2216ce9b5a089282077741d88b rahul.poruri <rahul.poruri@gmail.com> 1452939416 +0530	commit: main page update, added thesis files
+::::::::::::::
+/home/rahulporuri/Github/setup_files/.git/logs/HEAD
+::::::::::::::
+0000000000000000000000000000000000000000 7a6c4861bc44571a4824e4745237fa86e0b70c9d rahul.poruri <rahul.poruri@gmail.com> 1428432924 +0530	clone: from https://github.com/rahulporuri/setup_files.git
 7a6c4861bc44571a4824e4745237fa86e0b70c9d 8bda72c15c33858d29ced704f4337ded264ef744 rahul.poruri <rahul.poruri@gmail.com> 1428948021 +0530	commit: auto install and bashrc files
 8bda72c15c33858d29ced704f4337ded264ef744 8835d3f8cefac136cb0b072ceb18f3ed8be0e742 rahul.poruri <rahul.poruri@gmail.com> 1428948031 +0530	commit: auto install and bashrc files
 8835d3f8cefac136cb0b072ceb18f3ed8be0e742 d46d0a223a8a1f771cd4e87bdfd36daa4781c759 rahul.poruri <rahul.poruri@gmail.com> 1428948179 +0530	commit: more linux convenience cmds
 d46d0a223a8a1f771cd4e87bdfd36daa4781c759 56fbc469360679ac98afb4a32fe4d2829d58af14 rahul.poruri <rahul.poruri@gmail.com> 1444146654 +0530	commit: new .help files
+::::::::::::::
+/home/rahulporuri/Github/tex/.git/logs/HEAD
+::::::::::::::
+0000000000000000000000000000000000000000 3ed29fd508adc064160f867b288e41c772a9b1b7 rahul.poruri <rahul.poruri@gmail.com> 1429102004 +0530	clone: from https://github.com/rahulporuri/tex.git
 3ed29fd508adc064160f867b288e41c772a9b1b7 8d340ab19a17e993d7dc7b18432197e881b62f21 rahul.poruri <rahul.poruri@gmail.com> 1430068377 +0530	commit: flrw metric
 8d340ab19a17e993d7dc7b18432197e881b62f21 9f91253d4c9289d7d76901927b2e8f33a5861225 rahul.poruri <rahul.poruri@gmail.com> 1432184674 +0530	commit: cleanup
 9f91253d4c9289d7d76901927b2e8f33a5861225 f28bb3791d121f7140cca1a1a2f2c2903e34c704 rahul.poruri <rahul.poruri@gmail.com> 1432184803 +0530	commit: cleanup
