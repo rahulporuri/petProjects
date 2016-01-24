@@ -1675,6 +1675,33 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If you came here from the blog part of my website, you can go back to it by clicking <a href="http://rahulporuri.github.io/blog.html">here</a> or if you came here from my blogpost, you can go back to it by clicking <a href="http://rahulporuri.blogspot.in/">here</a>.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>A long, long time back, I had downloaded a copy of my facebook data, which included information on all the posts I had written over the years, all of the comments I&#39;d written and things I liked. More recently, similar to the other pet projects I am working on, I wanted to look at basic statistics of my activity on facebook. If you want to do the same, go <a href="https://www.facebook.com/settings">here</a> and click on &quot;Download a copy of your Facebook data&quot;. Once you&#39;ve downloaded it, you will find a .htm file titled &#39;wall.htm&#39;. Again, if you don&#39;t have IPython, you can run the python code that can be found <a href="https://github.com/rahulporuri/peepees/blob/master/get_fb_stats.py">here</a></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I use the BeautifulSoup module to parse the .htm file.</p>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
@@ -1683,9 +1710,7 @@ In&nbsp;[1]:
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">BeautifulSoup</span>
-
 <span class="kn">import</span> <span class="nn">time</span>
 </pre></div>
 
@@ -1693,6 +1718,15 @@ In&nbsp;[1]:
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>if you look at the &#39;wall.htm&#39; file, you will understand the structure and where the timestamps pertaining to posts, comments and whatnot are. They are the &#39;string&#39; attribute of the &#39;div&#39; elements in the htm file.</p>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1709,6 +1743,15 @@ In&nbsp;[2]:
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>the attribute u&#39;meta&#39; corresponds to the timestamps of any and every activity on my wall. the attribute u&#39;comment&#39; corresponds to comments. Blindly getting tag.string values will add noise to our timestamp dataset so we check to make sure that the attribute is meta before we add the string/timestamp.</p>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1753,6 +1796,15 @@ In&nbsp;[3]:
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>how the string/time stamps look</p>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1823,6 +1875,15 @@ In&nbsp;[5]:
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>from the numerous lists, we create a dictionary that tells us how many of each day/date/month/year are present in the list.</p>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -2067,20 +2128,14 @@ In&nbsp;[13]:
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
-In&nbsp;[]:
 </div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class="highlight"><pre> 
-</pre></div>
-
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If you came here from the blog part of my website, you can go back to it by clicking <a href="http://rahulporuri.github.io/blog.html">here</a> or if you came here from my blogpost, you can go back to it by clicking <a href="http://rahulporuri.blogspot.in/">here</a>.</p>
 </div>
 </div>
-</div>
-
 </div>
     </div>
   </div>
