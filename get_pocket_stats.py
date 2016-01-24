@@ -1,33 +1,3 @@
-'''
-http://stackoverflow.com/questions/7141431/python-extracting-html-tag-attributes-without-regular-expressions
-https://docs.python.org/2/library/htmlparser.html
-http://www.crummy.com/software/BeautifulSoup/bs4/doc/
-
-http://stackoverflow.com/questions/539900/google-bookmark-export-date-format
-
-html_doc = open('bookmarks.html')
-soup = BeautifulSoup(html_doc)
-
-j = 0
-for link in soup.find_all('a'):
-	j += 1
-
-
-dates = np.zeros(j)
-j = 0
-
-for link in soup.find_all('a'):
-	dates[j] = link.get('add_date')
-	j += 1
-
-print j
-print len(dates)
-print np.min(dates), np.max(dates)
-
-plt.hist(dates,50)
-plt.show()
-'''
-
 import numpy
 import matplotlib.pyplot as plt
 import BeautifulSoup
