@@ -8,5 +8,6 @@ for i in range(10):
     ax.plot(i, i, 'ko')
     f.canvas.draw()
     raw_input('pause : press any key ...')
+#    ax.cla()
 f.close()
 

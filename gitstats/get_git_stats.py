@@ -1,6 +1,8 @@
 
 # coding: utf-8
 
+# If you came here from the blog part of my website, you can go back to it by clicking [here](http://rahulporuri.github.io/blog.html) or if you came here from my blogpost, you can go back to it by clicking [here](http://rahulporuri.blogspot.in/).
+
 # I wanted to look at my commit stats on Github. While Github itself 
 # displays the number of commits I've done, I wanted to try it myself. 
 # In the process, learn something maybe.
@@ -15,7 +17,7 @@
 
 # In[1]:
 
-# more ~/Github/*/.git/logs/HEAD > commit_data.dat')
+get_ipython().system(u'more ~/Github/*/.git/logs/HEAD > commit_data.dat')
 
 
 # we need the time Python module because we get timestamps in the form of a 10-digit 
@@ -25,6 +27,7 @@
 
 import numpy
 import matplotlib.pyplot as plt
+get_ipython().magic(u'matplotlib inline')
 import time
 
 
@@ -95,17 +98,17 @@ print list(set(hourList))
 # In[6]:
 
 plt.hist(yearList, bins=3)
-plt.show()
+
 
 # In[7]:
 
 plt.hist(monthList,bins= 12)
-plt.show()
+
 
 # In[8]:
 
 plt.hist(dayList, bins=31)
-plt.show()
+
 
 # note that the following plot needs to be shifted right by 
 # +0530 because I didn't bother doing so myself. The time stamps 
@@ -114,4 +117,11 @@ plt.show()
 # In[9]:
 
 plt.hist(hourList, bins=24)
-plt.show()
+
+
+# If you came here from the blog part of my website, you can go back to it by clicking [here](http://rahulporuri.github.io/blog.html) or if you came here from my blogpost, you can go back to it by clicking [here](http://rahulporuri.blogspot.in/).
+
+# In[ ]:
+
+
+
