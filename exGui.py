@@ -25,11 +25,21 @@ import sys
 def on_ok():
 	print 'yay'
 
+def quit():
+	messageBox = QMessageBox()
+	messageBox.setWindowTitle("Quit Notepad")
+	messageBox.setText("Do you really want to quit?")
+	messageBox.setStandardButtons(QMessageBox().Yes | QMessageBox().No)
+	messageBox.setDefaultButton(QMessageBox().No)
+	if messageBox.exec_() == QMessageBox().Yes:
+		qApp.quit()
+
 def main():
 	app = QApplication(sys.argv)
 	textEdit = QTextEdit()
 	quitButton = QPushButton("Quit")
-	quitButton.clicked.connect(QCoreApplication.instance().quit)
+#	quitButton.clicked.connect(QCoreApplication.instance().quit)
+	quitButton.clicked.connect(quit)
 
 	cancelButton = QPushButton("Cancel")
 	okButton = QPushButton("OK")
