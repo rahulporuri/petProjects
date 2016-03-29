@@ -1,2 +1,2 @@
-# peepees
+# pet projects
 pet projects
