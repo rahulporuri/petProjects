@@ -13,7 +13,7 @@ def main():
 	textEdit = QTextEdit()
 	textEdit.show()
 
-	app.exec_()
+        app.exec_()
 	return
 """
 
@@ -42,7 +42,8 @@ def main():
 	quitButton.clicked.connect(quit)
 
 	cancelButton = QPushButton("Cancel")
-	okButton = QPushButton("OK")
+        cancelButton.clicked.connect()
+        okButton = QPushButton("OK")
 	okButton.clicked.connect(on_ok)
 
 	box = QDialogButtonBox()
@@ -60,8 +61,6 @@ def main():
 	window.setWindowTitle("Notepad : Poruri Sai Rahul")
 
 	window.show()
-
-	print on_ok
 
 	return app.exec_()
 
