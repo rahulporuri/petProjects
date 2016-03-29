@@ -17,16 +17,18 @@ from traits.api \
     import HasTraits, HasStrictTraits, Instance, Int, Str, Button, Float, List, on_trait_change
 
 from traitsui.api \
-    import View, Group, VGroup, HGroup, Item, TableEditor 
+    import View, Group, VGroup, HGroup, Item, TableEditor, TextEditor 
 
 from traitsui.table_column \
     import ObjectColumn 
 
 from chaco.api \
-    import ArrayPlotData, HPlotContainer, Plot, ArrayDataSource, DataRange1D, LinearMapper, BarPlot, PlotGraphicsContext
+    import ArrayPlotData, HPlotContainer, ToolbarPlot, ArrayDataSource, DataRange1D, LinearMapper, BarPlot, PlotGraphicsContext
 
 from chaco.tools.api \
     import SaveTool
+
+from chaco.shell import *
 
 from enable.component_editor \
     import ComponentEditor
@@ -56,21 +58,23 @@ class Application ( HasStrictTraits ):
     rows = List( row_data )
     aplot = Instance( HPlotContainer )
 
-    file_name = Str('test.png')
+    filename = Str
 
     add_row_button = Button('Add new row')
     print_rows_button = Button('Print row data')
+    save_data_button = Button('Save data set')
+    load_data_button = Button('Load data set')
+    
+    save_image_button = Button('Save Plot')
 
-    save_button = Button('Save Plot')
-
-    #@on_trait_change('rows')
+    @on_trait_change('rows.*')
     def _make_plot(self):
         x = [row.x for row in self.rows]
         y = [row.y for row in self.rows]
         z = [row.z for row in self.rows]
 
-#        plotdata = ArrayPlotData(x=x,y=y)
-
+        plotdata = ArrayPlotData(x=x,y=y)
+        """
         idx = linspace(1,len(x),len(x))
         vals = z
 
@@ -93,22 +97,41 @@ class Application ( HasStrictTraits ):
                         fill_color="cornflowerblue",
                         bar_width=bar_width,
                         line_width=line_width)
-
-        #test_plot = Plot(plotdata)
-        #test_plot.plot(("x","y"),type="scatter")
+        """
+        test_plot = ToolbarPlot(plotdata)
+        test_plot.plot(("x","y"),type="scatter")
         # changing type to line will make the 
         # plot a line plot! not recommended!
 
         container = HPlotContainer(test_plot)
         self.aplot = container
 
-    def _save_button_fired(self, filename='test.png'):
+    def _save_data_button_fired(self, filename='test.dat'):
+        f = open('test.dat', 'w')
+        for row in self.rows:
+            f.write(str(row.x)+','+str(row.y)+','+str(row.z)+'\n')
+        f.close()
+
+    def _load_data_button_fired(self):
+        for line in open(self.filename, 'r'):
+            x,y,z = line.split(',')
+            self.rows.append(row_data(x=int(x),
+                                      y=float(y),
+                                      z=float(z)
+                                     )
+            )
+
+    def _save_image_button_fired(self, filename='test.png'):
+        """
         plot = self.aplot
         plot.outer_bounds = [100,100]
         plot.do_layout(force=True)
         gc = PlotGraphicsContext((100,100),dpi=72)
         gc.render_component(plot)
         gc.save(filename)
+        """
+        plot = self.aplot
+        save(filename)
 
     def _rows_changed(self):
         print 1
@@ -119,7 +142,7 @@ class Application ( HasStrictTraits ):
                                   y = 0,
                                   z = 0)
                         )
-        self._make_plot()
+#        self._make_plot()
 
     def _print_rows_button_fired(self):
         for row in self.rows:
@@ -136,15 +159,19 @@ class Application ( HasStrictTraits ):
                                 show_border = True,
                                 ),
                             HGroup('add_row_button',
-                                   'print_rows_button'
+                                  #'print_rows_button',
+                                   'save_data_button'
                                   ),
+                            HGroup('load_data_button',
+                                Item('filename',editor=TextEditor(enter_set=True)),
+                                )
                              ),
                         VGroup(
                             Item('aplot',
                                 editor = ComponentEditor(),
-                                width  = 500,
-                                height = 500),
-                            Item('save_button')
+                                width  = 600,
+                                height = 600),
+                            Item('save_image_button')
                             )
                     ),
                     title     = 'TableEditor',
