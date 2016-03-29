@@ -11,10 +11,13 @@ one style of TableEditor is implemented, so that is the one shown.
 # Import statements:
 
 from numpy \
-    import linspace, sin
+    import linspace, sin, asarray
+
+from scipy.interpolate \
+    import interp1d
 
 from traits.api \
-    import HasTraits, HasStrictTraits, Instance, Int, Str, Button, Float, List, on_trait_change
+    import HasTraits, HasStrictTraits, Instance, Int, Str, Button, Float, List, on_trait_change, File, Array
 
 from traitsui.api \
     import View, Group, VGroup, HGroup, Item, TableEditor, TextEditor 
@@ -23,12 +26,12 @@ from traitsui.table_column \
     import ObjectColumn 
 
 from chaco.api \
-    import ArrayPlotData, HPlotContainer, ToolbarPlot, ArrayDataSource, DataRange1D, LinearMapper, BarPlot, PlotGraphicsContext
+    import ArrayPlotData, HPlotContainer, ToolbarPlot, ArrayDataSource, DataRange1D, LinearMapper, BarPlot, Plot, PlotGraphicsContext
 
 from chaco.tools.api \
     import SaveTool
 
-from chaco.shell import *
+from chaco.shell import plot, hold
 
 from enable.component_editor \
     import ComponentEditor
@@ -58,7 +61,8 @@ class Application ( HasStrictTraits ):
     rows = List( row_data )
     aplot = Instance( HPlotContainer )
 
-    filename = Str
+    #filename = Str
+    filename = File
 
     add_row_button = Button('Add new row')
     print_rows_button = Button('Print row data')
@@ -66,6 +70,7 @@ class Application ( HasStrictTraits ):
     load_data_button = Button('Load data set')
     
     save_image_button = Button('Save Plot')
+    interp_data_button = Button('Interpolate data')
 
     @on_trait_change('rows.*')
     def _make_plot(self):
@@ -113,6 +118,9 @@ class Application ( HasStrictTraits ):
         f.close()
 
     def _load_data_button_fired(self):
+        filedialog = FileEditorDemo()
+        filedialog.configure_traits
+
         for line in open(self.filename, 'r'):
             x,y,z = line.split(',')
             self.rows.append(row_data(x=int(x),
@@ -120,6 +128,35 @@ class Application ( HasStrictTraits ):
                                       z=float(z)
                                      )
             )
+
+    def _interp_data_button_fired(self):
+        x = [row.x for row in self.rows]
+        y = [row.y for row in self.rows]
+
+        f = interp1d(asarray(x),asarray(y))
+        y2 = Array
+        print x, sorted(x)
+        y2 = [f(i) for i in sorted(x)]
+
+        print y2
+        
+        plotdata = ArrayPlotData(x=x,y=y)
+        plotdata2 = ArrayPlotData(y=y2)
+
+        test_plot = Plot(plotdata)
+        test_plot.plot(("x","y"),type="scatter")
+        test_plot.plot(("x","y"),type="line")
+        test_plot_2 = Plot(plotdata2)
+        #test_plot_2.plot("y2", type="line")
+        # changing type to line w)ill make the 
+        # plot a line plot! not recommended!
+        """
+        test_plot = plot(x,y,"b-", bgcolor="white")
+        test_plot.hold()
+        test_plot = plot(x,y2,"g-")
+        """
+        container = HPlotContainer(test_plot)#,test_plot_2)
+        self.aplot = container
 
     def _save_image_button_fired(self, filename='test.png'):
         """
@@ -159,11 +196,12 @@ class Application ( HasStrictTraits ):
                                 show_border = True,
                                 ),
                             HGroup('add_row_button',
-                                  #'print_rows_button',
+                                   'print_rows_button',
                                    'save_data_button'
                                   ),
                             HGroup('load_data_button',
-                                Item('filename',editor=TextEditor(enter_set=True)),
+                                Item('filename'),
+                                #Item('filename',style='custom')
                                 )
                              ),
                         VGroup(
@@ -171,7 +209,8 @@ class Application ( HasStrictTraits ):
                                 editor = ComponentEditor(),
                                 width  = 600,
                                 height = 600),
-                            Item('save_image_button')
+                            HGroup('save_image_button',
+                                   'interp_data_button')
                             )
                     ),
                     title     = 'TableEditor',
@@ -181,6 +220,22 @@ class Application ( HasStrictTraits ):
                     buttons   = [ 'OK' ],
                     kind      = 'live',
                 )
+
+
+# Define the demo class:
+class FileEditorDemo ( HasTraits ):
+    """ Defines the main FileEditor demo class. """
+
+    # Define a File trait to view:
+    file_name = File
+
+    # Demo view:
+    view = View(
+        Item( 'file_name', style = 'custom',   label = 'Custom' ),
+        title     = 'FileEditor',
+        buttons   = ['OK'],
+        resizable = True
+    )
 
 # Create some rows
 rows = [
