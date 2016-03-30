@@ -16,6 +16,7 @@ def main():
 	app.exec_()
 	return
 """
+
 import time 
 import sys
 
@@ -36,7 +37,7 @@ class mainclass():
 
     def on_quit(self):
 	messageBox = QMessageBox()
-	messageBox.setWindowTitle("Quit Notepad")
+        messageBox.setWindowTitle("Quit Notepad")
 	messageBox.setText("Do you really want to quit?")
 	messageBox.setStandardButtons(QMessageBox().Yes | QMessageBox().No)
 	messageBox.setDefaultButton(QMessageBox().No)
@@ -53,6 +54,16 @@ class mainclass():
         for i in range(100):
             self.progressBar.setValue(i)
             time.sleep(1)
+
+# doesnt work
+    def on_openfile(self):
+        filedialog = QFileDialog()
+        layout = QVBoxLayout()
+        layout.addWidget(filedialog)
+        widget = QWidget()
+        widget.setLayout(layout)
+        widget.show
+
 
     def main(self):
 	quitButton = QPushButton("Quit")
@@ -72,7 +83,13 @@ class mainclass():
         box = QDialogButtonBox()
 	box.addButton("Apply", QDialogButtonBox().ApplyRole)
 
+        filedialog = QFileDialog()
+        openfile = QPushButton("Open file")
+        openfile.clicked.connect(self.on_openfile)
+
 	layout = QVBoxLayout()
+        layout.addWidget(filedialog)
+        layout.addWidget(openfile)
 	layout.addWidget(self.textEdit)
 	layout.addWidget(quitButton)
 	layout.addWidget(cancelButton)
