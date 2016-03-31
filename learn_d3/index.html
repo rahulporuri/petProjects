@@ -4,25 +4,30 @@
         <meta charset="utf-8">
         <title> D3 Test </title>
         <script type="text/javascript" src="d3/d3.v3.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-    <script type="text/javascript">
-        d3.select("body")
-            .append("p")
-            .text("New Paragraph!");
+        <script type="text/javascript">
+            var dataset = [5, 10, 15, 20, 25];
 
-        var body = d3.select("body");
-        var p = body.append("p");
-        p.text("New paragraph");
-
-        var dataset = [5, 10, 15, 20, 25];
-
-        d3.select("body").selectAll("p")
-            .data(dataset)
-            .enter()
-            .append("p")
-            .text(function(d) {return d;});
-     </script>
+            d3.select("body").selectAll("p")
+                .data(dataset)
+                .enter()
+                .append("p")
+                .text(function(d) {
+                    return "I can count up to " +d;
+                    })
+                .style("color", function(d) {
+                    if (d > 15) {
+                        return "red";
+                    } else {
+                        return "black";
+                    }
+                }
+                );
+        </script>
+        
+        <div class="bar"></div>
     </body>
 
 </html>
