@@ -1,29 +1,28 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title> Page Title </title>
-        <link rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="myscript.js"></script>
-        <!--<style type="text/css">
-            p{
-                font-family: sans-serif;
-                color: lime;
-            }
-        </style>-->
+        <meta charset="utf-8">
+        <title> D3 Test </title>
+        <script type="text/javascript" src="d3/d3.v3.js"></script>
     </head>
     <body>
-        <!--<script type="text/javascript">
-            alert("Hello, World!");
-            Comment - Creates a pop-up
-        </script>-->
+    <script type="text/javascript">
+        d3.select("body")
+            .append("p")
+            .text("New Paragraph!");
 
-        <svg width="50" height ="50">
-            <circle cx="25" cy="25" r="22"
-            fill="blue" stroke="gray" stroke-width="2"/>
-        </svg>
+        var body = d3.select("body");
+        var p = body.append("p");
+        p.text("New paragraph");
 
-        <h1>Page Title</h1>
-        <p>This is a really interesting paragraph</p>
+        var dataset = [5, 10, 15, 20, 25];
+
+        d3.select("body").selectAll("p")
+            .data(dataset)
+            .enter()
+            .append("p")
+            .text(function(d) {return d;});
+     </script>
     </body>
 
 </html>
