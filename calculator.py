@@ -1,13 +1,3 @@
-#  Copyright (c) 2007, Enthought, Inc.
-#  License: BSD Style.
-
-"""
-Implementation of a TableEditor demo plugin for Traits UI demo program
-
-This demo shows the full behavior of a straightforward TableEditor.  Only
-one style of TableEditor is implemented, so that is the one shown.
-"""
-
 # Import statements:
 
 from traits.api \

@@ -1,17 +1,5 @@
-#  Copyright (c) 2007, Enthought, Inc.
-#  License: BSD Style.
-
 # http://srinikom.github.io/pyside-docs/PySide/QtGui/QGridLayout.html#PySide.QtGui.PySide.QtGui.QGridLayout.addLayout
 # http://zetcode.com/gui/qt4/layoutmanagement/
-
-
-"""
-Implementation of a TableEditor demo plugin for Traits UI demo program
-
-This demo shows the full behavior of a straightforward TableEditor.  Only
-one style of TableEditor is implemented, so that is the one shown.
-"""
-
 # Import statements:
 
 import sys
