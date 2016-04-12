@@ -27,6 +27,27 @@
             d3.select("body")
               .append("p");
 
+            var paragraphs = d3.select("body").selectAll("p")
+                //.append("div")
+                //.attr("class", "bar")
+                //.style("height", function(d) {
+                //        var barHeight = d*5;
+                //        return barHeight +"px";
+            //});
+
+            var bars = 
+
+            p.enter().append("div")
+                     .attr("class", "bar")
+                     .style("height", function(d) {
+                        var barHeight = d*5;
+                        return barHeight +"px";
+            });
+
+
+            d3.select("body")
+              .append("p");
+              
             var w = 500;
             var h = 100;
             var svg = d3.select("body")
