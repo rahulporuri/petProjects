@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <!-- Load the jigna script. -->
+        <script type='text/javascript' src='/jigna/jigna.js'></script>
+
+        <!-- Once jigna is loaded, initialize it. -->
+        <script type='text/javascript'>
+            jigna.initialize();
+        </script>
+
+        <!-- Custom angularjs application to handle the view related logic of
+        formatting the domain model's time (in seconds) to an hh:mm:ss
+        format.--> 
+        <script type='text/javascript'>
+            // Specify the 'jigna' angular app as a dependency
+            var app = angular.module('StopWatchApp', ['jigna']);
+
+            // Define a filter to display time (in seconds) in a proper hh:mm:ss
+            // format
+            app.filter('displayTime', function(){
+                return function(time_in_seconds){
+                    hours = Math.floor(time_in_seconds/3600)
+                    mins = Math.floor((time_in_seconds%3600)/60)
+                    seconds = (time_in_seconds%3600)%60
+
+                    return hours + ":" + mins + ":" + seconds
+                };
+            });
+        </script>
+    </head>
+
+    <body ng-app='StopWatchApp'>
+
+        <input ng-model="stop_watch.result" type='number'>
+
+        <p></p>
+
+        <button ng-click="stop_watch.push_to_stack(9)">  9 </button>
+        <button ng-click="stop_watch.push_to_stack(8)">  8 </button>
+        <button ng-click="stop_watch.push_to_stack(7)">  7 </button>
+
+        <p></p>
+
+        <button ng-click="stop_watch.push_to_stack(6)">  6 </button>
+        <button ng-click="stop_watch.push_to_stack(5)">  5 </button>
+        <button ng-click="stop_watch.push_to_stack(4)">  4 </button>
+
+        <p></p>
+
+        <button ng-click="stop_watch.push_to_stack(3)">  3 </button>
+        <button ng-click="stop_watch.push_to_stack(2)">  2 </button>
+        <button ng-click="stop_watch.push_to_stack(1)">  1 </button>
+
+        <p></p>
+
+        <button ng-click="stop_watch.push_to_stack('+')"> + </button>
+        <button ng-click="stop_watch.push_to_stack(0)">  0 </button>
+        <button ng-click="stop_watch.push_to_stack('-')"> - </button>
+
+        <p></p>
+
+        <button ng-click="stop_watch.push_to_stack('*')"> * </button>
+        <button ng-click="stop_watch.set_result()">  = </button>
+        <button ng-click="stop_watch.push_to_stack('/')"> / </button>
+    
+        <p></p>
+
+        <button ng-click="stop_watch.push_to_stack('.')"> . </button>
+        <button ng-click="stop_watch.set_result()">   </button>
+        <button ng-click="stop_watch.clear_stack()"> clr </button>
+    </body>
+</html>
