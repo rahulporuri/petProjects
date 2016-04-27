@@ -1,0 +1,217 @@
+0000000000000000000000000000000000000000 5b382adcf5187988955176709d8193243a9fd44e Poruri Sai Rahul <rporuri@enthought.com> 1460796592 +0530	clone: from git@github.com:rahulporuri/authorAffiliations.git
+5b382adcf5187988955176709d8193243a9fd44e f935f2925272fce77a063b07b25a0a841af24fb9 Poruri Sai Rahul <rporuri@enthought.com> 1460796620 +0530	checkout: moving from master to gh-pages
+f935f2925272fce77a063b07b25a0a841af24fb9 ac67fe53ebf8008551a5c81b8960df8885333526 Poruri Sai Rahul <rporuri@enthought.com> 1460807739 +0530	commit: updates to index.html : v1.0 of the site is up!
+ac67fe53ebf8008551a5c81b8960df8885333526 5b382adcf5187988955176709d8193243a9fd44e Poruri Sai Rahul <rporuri@enthought.com> 1460807767 +0530	checkout: moving from gh-pages to master
+5b382adcf5187988955176709d8193243a9fd44e 1c695cc1d0f58760b50a6ac09304a3f992850a2c Poruri Sai Rahul <rporuri@enthought.com> 1460807801 +0530	commit: python code to make graph!
+1c695cc1d0f58760b50a6ac09304a3f992850a2c 3eade6d5f49df98d9d9224ce5c276ba991033c25 Poruri Sai Rahul <rporuri@enthought.com> 1460807871 +0530	commit: added necessary files to master
+0000000000000000000000000000000000000000 d2afe600aa030966899c6cc29e6aed9a8b343f27 rahul.poruri <rahul.poruri@gmail.com> 1459395467 +0530	clone: from https://github.com/DKirwan/calendar-heatmap.git
+0000000000000000000000000000000000000000 3fb4f7e9e7111d148f99d94f17ff9bf3382129cd rahul.poruri <rahul.poruri@gmail.com> 1459153562 +0530	clone: from git@github.com:enthought/canopy-data-import.git
+3fb4f7e9e7111d148f99d94f17ff9bf3382129cd 3fb4f7e9e7111d148f99d94f17ff9bf3382129cd rahul.poruri <rahul.poruri@gmail.com> 1459153582 +0530	checkout: moving from master to enh-docs-faw
+3fb4f7e9e7111d148f99d94f17ff9bf3382129cd 3fb4f7e9e7111d148f99d94f17ff9bf3382129cd rahul.poruri <rahul.poruri@gmail.com> 1459153588 +0530	checkout: moving from enh-docs-faw to master
+3fb4f7e9e7111d148f99d94f17ff9bf3382129cd 3fb4f7e9e7111d148f99d94f17ff9bf3382129cd rahul.poruri <rahul.poruri@gmail.com> 1459153591 +0530	checkout: moving from master to enh-docs-faq
+3fb4f7e9e7111d148f99d94f17ff9bf3382129cd 828eb51dfd1f407e6989e4b3b8f194641a78a782 rahul.poruri <rahul.poruri@gmail.com> 1459161129 +0530	commit: faq page in the user docs
+828eb51dfd1f407e6989e4b3b8f194641a78a782 3fb4f7e9e7111d148f99d94f17ff9bf3382129cd rahul.poruri <rahul.poruri@gmail.com> 1459161146 +0530	checkout: moving from enh-docs-faq to master
+3fb4f7e9e7111d148f99d94f17ff9bf3382129cd 3fb4f7e9e7111d148f99d94f17ff9bf3382129cd rahul.poruri <rahul.poruri@gmail.com> 1459161159 +0530	checkout: moving from master to screwaround
+3fb4f7e9e7111d148f99d94f17ff9bf3382129cd 3fb4f7e9e7111d148f99d94f17ff9bf3382129cd rahul.poruri <rahul.poruri@gmail.com> 1459418728 +0530	checkout: moving from screwaround to issue_554_reorganize_repo_layout
+3fb4f7e9e7111d148f99d94f17ff9bf3382129cd 2d95e05caecbef9fc8259ac4292f919171e6d157 rahul.poruri <rahul.poruri@gmail.com> 1459428247 +0530	commit: reorganized tests in repo
+2d95e05caecbef9fc8259ac4292f919171e6d157 3a9fcc297378cef9824d2e7165888c5732fb2ea0 rahul.poruri <rahul.poruri@gmail.com> 1459494789 +0530	commit: fixed broken tests - 1 remaining
+3a9fcc297378cef9824d2e7165888c5732fb2ea0 3fb4f7e9e7111d148f99d94f17ff9bf3382129cd rahul.poruri <rahul.poruri@gmail.com> 1459495049 +0530	checkout: moving from issue_554_reorganize_repo_layout to screwaround
+3fb4f7e9e7111d148f99d94f17ff9bf3382129cd 3fb4f7e9e7111d148f99d94f17ff9bf3382129cd rahul.poruri <rahul.poruri@gmail.com> 1459495054 +0530	checkout: moving from screwaround to master
+3fb4f7e9e7111d148f99d94f17ff9bf3382129cd 09b73758839149c7bf11e600541c291ee113afe5 rahul.poruri <rahul.poruri@gmail.com> 1459495062 +0530	pull origin master: Fast-forward
+09b73758839149c7bf11e600541c291ee113afe5 09b73758839149c7bf11e600541c291ee113afe5 rahul.poruri <rahul.poruri@gmail.com> 1459495088 +0530	checkout: moving from master to master
+09b73758839149c7bf11e600541c291ee113afe5 3fb4f7e9e7111d148f99d94f17ff9bf3382129cd rahul.poruri <rahul.poruri@gmail.com> 1459495091 +0530	checkout: moving from master to screwaround
+3fb4f7e9e7111d148f99d94f17ff9bf3382129cd 09b73758839149c7bf11e600541c291ee113afe5 rahul.poruri <rahul.poruri@gmail.com> 1459496680 +0530	checkout: moving from screwaround to master
+09b73758839149c7bf11e600541c291ee113afe5 3a9fcc297378cef9824d2e7165888c5732fb2ea0 rahul.poruri <rahul.poruri@gmail.com> 1459500177 +0530	checkout: moving from master to issue_554_reorganize_repo_layout
+3a9fcc297378cef9824d2e7165888c5732fb2ea0 3fb4f7e9e7111d148f99d94f17ff9bf3382129cd rahul.poruri <rahul.poruri@gmail.com> 1459506722 +0530	checkout: moving from issue_554_reorganize_repo_layout to screwaround
+3fb4f7e9e7111d148f99d94f17ff9bf3382129cd 09b73758839149c7bf11e600541c291ee113afe5 rahul.poruri <rahul.poruri@gmail.com> 1459511156 +0530	checkout: moving from screwaround to master
+09b73758839149c7bf11e600541c291ee113afe5 09b73758839149c7bf11e600541c291ee113afe5 rahul.poruri <rahul.poruri@gmail.com> 1459511247 +0530	checkout: moving from master to fix_issue_547
+09b73758839149c7bf11e600541c291ee113afe5 1b3d302733f6142232df4f61882fb8d992945c67 rahul.poruri <rahul.poruri@gmail.com> 1459511841 +0530	commit: changed text
+1b3d302733f6142232df4f61882fb8d992945c67 3fb4f7e9e7111d148f99d94f17ff9bf3382129cd rahul.poruri <rahul.poruri@gmail.com> 1459513000 +0530	checkout: moving from fix_issue_547 to screwaround
+3fb4f7e9e7111d148f99d94f17ff9bf3382129cd 3a9fcc297378cef9824d2e7165888c5732fb2ea0 rahul.poruri <rahul.poruri@gmail.com> 1459747508 +0530	checkout: moving from screwaround to issue_554_reorganize_repo_layout
+3a9fcc297378cef9824d2e7165888c5732fb2ea0 3fb4f7e9e7111d148f99d94f17ff9bf3382129cd rahul.poruri <rahul.poruri@gmail.com> 1459748230 +0530	checkout: moving from issue_554_reorganize_repo_layout to screwaround
+3fb4f7e9e7111d148f99d94f17ff9bf3382129cd 09b73758839149c7bf11e600541c291ee113afe5 rahul.poruri <rahul.poruri@gmail.com> 1459748239 +0530	pull origin master: Fast-forward
+09b73758839149c7bf11e600541c291ee113afe5 09b73758839149c7bf11e600541c291ee113afe5 rahul.poruri <rahul.poruri@gmail.com> 1459838748 +0530	checkout: moving from screwaround to master
+09b73758839149c7bf11e600541c291ee113afe5 09b73758839149c7bf11e600541c291ee113afe5 rahul.poruri <rahul.poruri@gmail.com> 1459838788 +0530	checkout: moving from master to issue_518_test_TextToFrameMapper
+09b73758839149c7bf11e600541c291ee113afe5 40e5db1f3bf4ece15ff286cf3fefd98114c64fc9 rahul.poruri <rahul.poruri@gmail.com> 1459839158 +0530	commit: ADD: test coverage for TextToFrameMapper
+40e5db1f3bf4ece15ff286cf3fefd98114c64fc9 09b73758839149c7bf11e600541c291ee113afe5 rahul.poruri <rahul.poruri@gmail.com> 1459839836 +0530	checkout: moving from issue_518_test_TextToFrameMapper to screwaround
+09b73758839149c7bf11e600541c291ee113afe5 09b73758839149c7bf11e600541c291ee113afe5 rahul.poruri <rahul.poruri@gmail.com> 1459843257 +0530	checkout: moving from screwaround to master
+09b73758839149c7bf11e600541c291ee113afe5 09b73758839149c7bf11e600541c291ee113afe5 rahul.poruri <rahul.poruri@gmail.com> 1459843302 +0530	checkout: moving from master to issue_527_Qt_dialogs_refactor
+09b73758839149c7bf11e600541c291ee113afe5 09b73758839149c7bf11e600541c291ee113afe5 rahul.poruri <rahul.poruri@gmail.com> 1459860830 +0530	checkout: moving from issue_527_Qt_dialogs_refactor to master
+09b73758839149c7bf11e600541c291ee113afe5 09b73758839149c7bf11e600541c291ee113afe5 rahul.poruri <rahul.poruri@gmail.com> 1459917581 +0530	checkout: moving from master to issue_527_Qt_dialogs_refactor
+09b73758839149c7bf11e600541c291ee113afe5 09b73758839149c7bf11e600541c291ee113afe5 rahul.poruri <rahul.poruri@gmail.com> 1459917654 +0530	checkout: moving from issue_527_Qt_dialogs_refactor to master
+09b73758839149c7bf11e600541c291ee113afe5 09b73758839149c7bf11e600541c291ee113afe5 rahul.poruri <rahul.poruri@gmail.com> 1459917721 +0530	checkout: moving from master to issue_527_Qt_dialogs_refactor
+09b73758839149c7bf11e600541c291ee113afe5 8262c1d7f2b10084144f0e0f8b8f7483861ae443 rahul.poruri <rahul.poruri@gmail.com> 1459917734 +0530	commit: qt dialog refactor
+8262c1d7f2b10084144f0e0f8b8f7483861ae443 09b73758839149c7bf11e600541c291ee113afe5 rahul.poruri <rahul.poruri@gmail.com> 1459917743 +0530	checkout: moving from issue_527_Qt_dialogs_refactor to master
+09b73758839149c7bf11e600541c291ee113afe5 8262c1d7f2b10084144f0e0f8b8f7483861ae443 rahul.poruri <rahul.poruri@gmail.com> 1459918071 +0530	checkout: moving from master to issue_527_Qt_dialogs_refactor
+8262c1d7f2b10084144f0e0f8b8f7483861ae443 09b73758839149c7bf11e600541c291ee113afe5 rahul.poruri <rahul.poruri@gmail.com> 1459918113 +0530	checkout: moving from issue_527_Qt_dialogs_refactor to master
+09b73758839149c7bf11e600541c291ee113afe5 8262c1d7f2b10084144f0e0f8b8f7483861ae443 rahul.poruri <rahul.poruri@gmail.com> 1459918614 +0530	checkout: moving from master to issue_527_Qt_dialogs_refactor
+8262c1d7f2b10084144f0e0f8b8f7483861ae443 6e568111942137a9c637dfbd28779f43e735af57 rahul.poruri <rahul.poruri@gmail.com> 1459919676 +0530	commit: FIX : added missing import statement in datetimeformatcolumndialog
+6e568111942137a9c637dfbd28779f43e735af57 3a9fcc297378cef9824d2e7165888c5732fb2ea0 rahul.poruri <rahul.poruri@gmail.com> 1459919686 +0530	checkout: moving from issue_527_Qt_dialogs_refactor to issue_554_reorganize_repo_layout
+3a9fcc297378cef9824d2e7165888c5732fb2ea0 3dc610ed5e187a226e9dfb471e4c93b4049a8da5 rahul.poruri <rahul.poruri@gmail.com> 1459920363 +0530	commit: FIX : undid some changes to previously working tests that got broken
+3dc610ed5e187a226e9dfb471e4c93b4049a8da5 6e568111942137a9c637dfbd28779f43e735af57 rahul.poruri <rahul.poruri@gmail.com> 1459920392 +0530	checkout: moving from issue_554_reorganize_repo_layout to issue_527_Qt_dialogs_refactor
+6e568111942137a9c637dfbd28779f43e735af57 599b19806fdc651d0c265236a16157f9e885911c rahul.poruri <rahul.poruri@gmail.com> 1459920719 +0530	commit: CLN : added init file in dir, added copyright header
+599b19806fdc651d0c265236a16157f9e885911c 40e5db1f3bf4ece15ff286cf3fefd98114c64fc9 rahul.poruri <rahul.poruri@gmail.com> 1459920770 +0530	checkout: moving from issue_527_Qt_dialogs_refactor to issue_518_test_TextToFrameMapper
+40e5db1f3bf4ece15ff286cf3fefd98114c64fc9 4879cf3897383dd8ade65f6b52a2de7d96825d5e rahul.poruri <rahul.poruri@gmail.com> 1459920903 +0530	commit: CLN : replaced test_dir with test_data_dir
+4879cf3897383dd8ade65f6b52a2de7d96825d5e 09b73758839149c7bf11e600541c291ee113afe5 Poruri Sai Rahul <rporuri@enthought.com> 1459922296 +0530	checkout: moving from issue_518_test_TextToFrameMapper to master
+09b73758839149c7bf11e600541c291ee113afe5 3dc610ed5e187a226e9dfb471e4c93b4049a8da5 Poruri Sai Rahul <rporuri@enthought.com> 1459922411 +0530	checkout: moving from master to issue_554_reorganize_repo_layout
+3dc610ed5e187a226e9dfb471e4c93b4049a8da5 599b19806fdc651d0c265236a16157f9e885911c Poruri Sai Rahul <rporuri@enthought.com> 1459922641 +0530	checkout: moving from issue_554_reorganize_repo_layout to issue_527_Qt_dialogs_refactor
+599b19806fdc651d0c265236a16157f9e885911c 4879cf3897383dd8ade65f6b52a2de7d96825d5e Poruri Sai Rahul <rporuri@enthought.com> 1459923341 +0530	checkout: moving from issue_527_Qt_dialogs_refactor to issue_518_test_TextToFrameMapper
+4879cf3897383dd8ade65f6b52a2de7d96825d5e 3dc610ed5e187a226e9dfb471e4c93b4049a8da5 Poruri Sai Rahul <rporuri@enthought.com> 1459923770 +0530	checkout: moving from issue_518_test_TextToFrameMapper to issue_554_reorganize_repo_layout
+3dc610ed5e187a226e9dfb471e4c93b4049a8da5 599b19806fdc651d0c265236a16157f9e885911c Poruri Sai Rahul <rporuri@enthought.com> 1459924058 +0530	checkout: moving from issue_554_reorganize_repo_layout to issue_527_Qt_dialogs_refactor
+599b19806fdc651d0c265236a16157f9e885911c 3dc610ed5e187a226e9dfb471e4c93b4049a8da5 Poruri Sai Rahul <rporuri@enthought.com> 1459924556 +0530	checkout: moving from issue_527_Qt_dialogs_refactor to issue_554_reorganize_repo_layout
+3dc610ed5e187a226e9dfb471e4c93b4049a8da5 cb6ee25659e3624a5658773410383516b2d82393 Poruri Sai Rahul <rporuri@enthought.com> 1459925149 +0530	commit: FIX : added init files to discover tests
+cb6ee25659e3624a5658773410383516b2d82393 09b73758839149c7bf11e600541c291ee113afe5 Poruri Sai Rahul <rporuri@enthought.com> 1459936809 +0530	checkout: moving from issue_554_reorganize_repo_layout to master
+09b73758839149c7bf11e600541c291ee113afe5 ae71ab34448d364cc2d172decfd30cf126014dc3 Poruri Sai Rahul <rporuri@enthought.com> 1459936818 +0530	pull origin master: Fast-forward
+ae71ab34448d364cc2d172decfd30cf126014dc3 599b19806fdc651d0c265236a16157f9e885911c Poruri Sai Rahul <rporuri@enthought.com> 1459937809 +0530	checkout: moving from master to issue_527_Qt_dialogs_refactor
+599b19806fdc651d0c265236a16157f9e885911c 10c89f25b20009f87fb21e0143abd7ff685a08bb Poruri Sai Rahul <rporuri@enthought.com> 1460007947 +0530	commit: ADD/CLN : Added a test case for SplitColumnDialog and cleaned files to conform with pep8
+10c89f25b20009f87fb21e0143abd7ff685a08bb 63fec8fe9d387c113f6febed7d87a1bce4f80f7e Poruri Sai Rahul <rporuri@enthought.com> 1460010137 +0530	commit: ADD : test for delete_rows_where dialog
+63fec8fe9d387c113f6febed7d87a1bce4f80f7e 09b73758839149c7bf11e600541c291ee113afe5 Poruri Sai Rahul <rporuri@enthought.com> 1460011056 +0530	checkout: moving from issue_527_Qt_dialogs_refactor to screwaround
+09b73758839149c7bf11e600541c291ee113afe5 cb6ee25659e3624a5658773410383516b2d82393 Poruri Sai Rahul <rporuri@enthought.com> 1460018407 +0530	checkout: moving from screwaround to issue_554_reorganize_repo_layout
+cb6ee25659e3624a5658773410383516b2d82393 63fec8fe9d387c113f6febed7d87a1bce4f80f7e Poruri Sai Rahul <rporuri@enthought.com> 1460023007 +0530	checkout: moving from issue_554_reorganize_repo_layout to issue_527_Qt_dialogs_refactor
+63fec8fe9d387c113f6febed7d87a1bce4f80f7e 9fd82d86dbfc8412960ad35b4d87c84d33bf58d2 Poruri Sai Rahul <rporuri@enthought.com> 1460025003 +0530	commit: ADD : test for JoinColumnsDialog
+9fd82d86dbfc8412960ad35b4d87c84d33bf58d2 ae71ab34448d364cc2d172decfd30cf126014dc3 Poruri Sai Rahul <rporuri@enthought.com> 1460125034 +0530	checkout: moving from issue_527_Qt_dialogs_refactor to master
+ae71ab34448d364cc2d172decfd30cf126014dc3 02fc80c3deadc746c2ae4988ce07bfdac8ec5142 Poruri Sai Rahul <rporuri@enthought.com> 1460125045 +0530	pull origin master: Fast-forward
+02fc80c3deadc746c2ae4988ce07bfdac8ec5142 02fc80c3deadc746c2ae4988ce07bfdac8ec5142 Poruri Sai Rahul <rporuri@enthought.com> 1460125089 +0530	checkout: moving from master to issue_769_rename_bump_header
+02fc80c3deadc746c2ae4988ce07bfdac8ec5142 8c735fbc71ca587b7f6595581ab40289d36c6914 Poruri Sai Rahul <rporuri@enthought.com> 1460125540 +0530	commit: FIX: changed Bump Header to Demote Header to row
+8c735fbc71ca587b7f6595581ab40289d36c6914 02fc80c3deadc746c2ae4988ce07bfdac8ec5142 Poruri Sai Rahul <rporuri@enthought.com> 1460126106 +0530	checkout: moving from issue_769_rename_bump_header to master
+02fc80c3deadc746c2ae4988ce07bfdac8ec5142 02fc80c3deadc746c2ae4988ce07bfdac8ec5142 Poruri Sai Rahul <rporuri@enthought.com> 1460126272 +0530	checkout: moving from master to issue_765_reword_mark_as_null
+02fc80c3deadc746c2ae4988ce07bfdac8ec5142 1a32ab284d05aee7f69d1cf39ded1e835fa3ffa4 Poruri Sai Rahul <rporuri@enthought.com> 1460126810 +0530	commit: FIX: rename mark as null to mark all occurances as null
+1a32ab284d05aee7f69d1cf39ded1e835fa3ffa4 09b73758839149c7bf11e600541c291ee113afe5 Poruri Sai Rahul <rporuri@enthought.com> 1460130089 +0530	checkout: moving from issue_765_reword_mark_as_null to screwaround
+09b73758839149c7bf11e600541c291ee113afe5 131b42df4bbf9b8c1430b69d515752553a9a7299 Poruri Sai Rahul <rporuri@enthought.com> 1460346090 +0530	pull origin master: Fast-forward
+131b42df4bbf9b8c1430b69d515752553a9a7299 02fc80c3deadc746c2ae4988ce07bfdac8ec5142 Poruri Sai Rahul <rporuri@enthought.com> 1460359788 +0530	checkout: moving from screwaround to master
+02fc80c3deadc746c2ae4988ce07bfdac8ec5142 131b42df4bbf9b8c1430b69d515752553a9a7299 Poruri Sai Rahul <rporuri@enthought.com> 1460359798 +0530	pull origin master: Fast-forward
+131b42df4bbf9b8c1430b69d515752553a9a7299 131b42df4bbf9b8c1430b69d515752553a9a7299 Poruri Sai Rahul <rporuri@enthought.com> 1460359945 +0530	checkout: moving from master to screwaround
+131b42df4bbf9b8c1430b69d515752553a9a7299 6b0ae0bda13aeb858cb5c28c80e6f727051b5f92 Poruri Sai Rahul <rporuri@enthought.com> 1460628202 +0530	pull origin master: Fast-forward
+6b0ae0bda13aeb858cb5c28c80e6f727051b5f92 6a22c880ed3d2874f0615aa2dd17bc06fe655ac9 Poruri Sai Rahul <rporuri@enthought.com> 1460628204 +0530	checkout: moving from screwaround to master
+6a22c880ed3d2874f0615aa2dd17bc06fe655ac9 6b0ae0bda13aeb858cb5c28c80e6f727051b5f92 Poruri Sai Rahul <rporuri@enthought.com> 1460628218 +0530	pull origin master: Fast-forward
+6b0ae0bda13aeb858cb5c28c80e6f727051b5f92 6b0ae0bda13aeb858cb5c28c80e6f727051b5f92 Poruri Sai Rahul <rporuri@enthought.com> 1460628234 +0530	checkout: moving from master to screwaround
+6b0ae0bda13aeb858cb5c28c80e6f727051b5f92 6b0ae0bda13aeb858cb5c28c80e6f727051b5f92 Poruri Sai Rahul <rporuri@enthought.com> 1460691769 +0530	checkout: moving from screwaround to master
+6b0ae0bda13aeb858cb5c28c80e6f727051b5f92 bf9c058fb110d1630f6133b243625331fcaa0f5b Poruri Sai Rahul <rporuri@enthought.com> 1460691776 +0530	pull origin master: Fast-forward
+bf9c058fb110d1630f6133b243625331fcaa0f5b 8028aca201b36771837be0fb2a75534a71de93b0 Poruri Sai Rahul <rporuri@enthought.com> 1460701690 +0530	pull origin master: Fast-forward
+8028aca201b36771837be0fb2a75534a71de93b0 6b0ae0bda13aeb858cb5c28c80e6f727051b5f92 Poruri Sai Rahul <rporuri@enthought.com> 1460703181 +0530	checkout: moving from master to screwaround
+6b0ae0bda13aeb858cb5c28c80e6f727051b5f92 8028aca201b36771837be0fb2a75534a71de93b0 Poruri Sai Rahul <rporuri@enthought.com> 1460709801 +0530	checkout: moving from screwaround to master
+8028aca201b36771837be0fb2a75534a71de93b0 8028aca201b36771837be0fb2a75534a71de93b0 Poruri Sai Rahul <rporuri@enthought.com> 1460709820 +0530	checkout: moving from master to fix_cyclic_imports
+8028aca201b36771837be0fb2a75534a71de93b0 daa3d648c09ec5d138ea7aee24d7842547d94a2b Poruri Sai Rahul <rporuri@enthought.com> 1460711182 +0530	commit: CLN : import directly from relevant files instead of from api
+daa3d648c09ec5d138ea7aee24d7842547d94a2b 8028aca201b36771837be0fb2a75534a71de93b0 Poruri Sai Rahul <rporuri@enthought.com> 1460809713 +0530	checkout: moving from fix_cyclic_imports to master
+8028aca201b36771837be0fb2a75534a71de93b0 e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1460809726 +0530	pull origin master: Fast-forward
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd 6b0ae0bda13aeb858cb5c28c80e6f727051b5f92 Poruri Sai Rahul <rporuri@enthought.com> 1460957880 +0530	checkout: moving from master to screwaround
+6b0ae0bda13aeb858cb5c28c80e6f727051b5f92 e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1460957888 +0530	pull origin master: Fast-forward
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1460962704 +0530	checkout: moving from screwaround to master
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1460962712 +0530	checkout: moving from master to screwaround
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1460962725 +0530	checkout: moving from screwaround to master
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1460962769 +0530	checkout: moving from master to issue_801_reorder_read_data_params
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd 225f126d8ba1216112278eb3189aac58c64bc372 Poruri Sai Rahul <rporuri@enthought.com> 1460969033 +0530	commit: CLN : reorder read data params and reword desc attrs of params
+225f126d8ba1216112278eb3189aac58c64bc372 e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1460970232 +0530	checkout: moving from issue_801_reorder_read_data_params to master
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1460972933 +0530	checkout: moving from master to screwaround
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1460982758 +0530	checkout: moving from screwaround to master
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1460982763 +0530	checkout: moving from master to master
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1460982768 +0530	checkout: moving from master to screwaround
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1460982777 +0530	checkout: moving from screwaround to master
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1460983122 +0530	checkout: moving from master to issue_760_resize_DIT
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd 6fabe14ad7cba09359a3e1d0bdb2b9566262ec07 Poruri Sai Rahul <rporuri@enthought.com> 1460983219 +0530	commit: FIX : prevent auto-resizing of column widths when DIT window is resized
+6fabe14ad7cba09359a3e1d0bdb2b9566262ec07 e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1460983239 +0530	checkout: moving from issue_760_resize_DIT to master
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1460983259 +0530	checkout: moving from master to screwaround
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1460983486 +0530	checkout: moving from screwaround to master
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd 6fabe14ad7cba09359a3e1d0bdb2b9566262ec07 Poruri Sai Rahul <rporuri@enthought.com> 1460983492 +0530	checkout: moving from master to issue_760_resize_DIT
+6fabe14ad7cba09359a3e1d0bdb2b9566262ec07 771069262ed3ed70edd253091de58893a155f114 Poruri Sai Rahul <rporuri@enthought.com> 1460983715 +0530	commit: CLN : remove private method _update_column_sizes and references to it
+771069262ed3ed70edd253091de58893a155f114 e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1460984741 +0530	checkout: moving from issue_760_resize_DIT to screwaround
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd 771069262ed3ed70edd253091de58893a155f114 Poruri Sai Rahul <rporuri@enthought.com> 1460985446 +0530	checkout: moving from screwaround to issue_760_resize_DIT
+771069262ed3ed70edd253091de58893a155f114 e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1460986077 +0530	checkout: moving from issue_760_resize_DIT to screwaround
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd 771069262ed3ed70edd253091de58893a155f114 Poruri Sai Rahul <rporuri@enthought.com> 1460986152 +0530	checkout: moving from screwaround to issue_760_resize_DIT
+771069262ed3ed70edd253091de58893a155f114 e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1460987016 +0530	checkout: moving from issue_760_resize_DIT to screwaround
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1461035798 +0530	checkout: moving from screwaround to master
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1461035803 +0530	checkout: moving from master to screwaround
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1461035813 +0530	checkout: moving from screwaround to master
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd 98f8fd37829574750959d043598e46899a2cbb77 Poruri Sai Rahul <rporuri@enthought.com> 1461035829 +0530	pull origin master: Fast-forward
+98f8fd37829574750959d043598e46899a2cbb77 98f8fd37829574750959d043598e46899a2cbb77 Poruri Sai Rahul <rporuri@enthought.com> 1461035856 +0530	checkout: moving from master to issue_805_about_dialog
+98f8fd37829574750959d043598e46899a2cbb77 267f7d8bd643e9d2fbdd54880247e233d104b104 Poruri Sai Rahul <rporuri@enthought.com> 1461035913 +0530	commit: FIX : correct file name mismatch in about dialog
+267f7d8bd643e9d2fbdd54880247e233d104b104 98f8fd37829574750959d043598e46899a2cbb77 Poruri Sai Rahul <rporuri@enthought.com> 1461035989 +0530	checkout: moving from issue_805_about_dialog to master
+98f8fd37829574750959d043598e46899a2cbb77 daa3d648c09ec5d138ea7aee24d7842547d94a2b Poruri Sai Rahul <rporuri@enthought.com> 1461039797 +0530	checkout: moving from master to fix_cyclic_imports
+daa3d648c09ec5d138ea7aee24d7842547d94a2b 98f8fd37829574750959d043598e46899a2cbb77 Poruri Sai Rahul <rporuri@enthought.com> 1461040253 +0530	checkout: moving from fix_cyclic_imports to master
+98f8fd37829574750959d043598e46899a2cbb77 e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd Poruri Sai Rahul <rporuri@enthought.com> 1461041064 +0530	checkout: moving from master to screwaround
+e7b4ac5854c1836ec4aaba0d4a1010f182c02ffd 98f8fd37829574750959d043598e46899a2cbb77 Poruri Sai Rahul <rporuri@enthought.com> 1461041090 +0530	pull origin master: Fast-forward
+98f8fd37829574750959d043598e46899a2cbb77 98f8fd37829574750959d043598e46899a2cbb77 Poruri Sai Rahul <rporuri@enthought.com> 1461060560 +0530	checkout: moving from screwaround to master
+98f8fd37829574750959d043598e46899a2cbb77 4879cf3897383dd8ade65f6b52a2de7d96825d5e Poruri Sai Rahul <rporuri@enthought.com> 1461060604 +0530	checkout: moving from master to issue_518_test_TextToFrameMapper
+4879cf3897383dd8ade65f6b52a2de7d96825d5e d27f34ea23d4157211b0682f0caab63c50ec54d4 Poruri Sai Rahul <rporuri@enthought.com> 1461061225 +0530	commit (merge): FIX : merge conflict in test_mapper
+d27f34ea23d4157211b0682f0caab63c50ec54d4 98f8fd37829574750959d043598e46899a2cbb77 Poruri Sai Rahul <rporuri@enthought.com> 1461062366 +0530	checkout: moving from issue_518_test_TextToFrameMapper to master
+98f8fd37829574750959d043598e46899a2cbb77 9fd82d86dbfc8412960ad35b4d87c84d33bf58d2 Poruri Sai Rahul <rporuri@enthought.com> 1461062384 +0530	checkout: moving from master to issue_527_Qt_dialogs_refactor
+9fd82d86dbfc8412960ad35b4d87c84d33bf58d2 a1ecaa5b705b44a27f53217208f96d14bb8e4021 Poruri Sai Rahul <rporuri@enthought.com> 1461063220 +0530	commit (merge): FIX : merge conflict
+a1ecaa5b705b44a27f53217208f96d14bb8e4021 98f8fd37829574750959d043598e46899a2cbb77 Poruri Sai Rahul <rporuri@enthought.com> 1461063384 +0530	checkout: moving from issue_527_Qt_dialogs_refactor to master
+98f8fd37829574750959d043598e46899a2cbb77 cb6ee25659e3624a5658773410383516b2d82393 Poruri Sai Rahul <rporuri@enthought.com> 1461063473 +0530	checkout: moving from master to issue_554_reorganize_repo_layout
+cb6ee25659e3624a5658773410383516b2d82393 d919c361e9dfaeaff12d621ace457fbc173b4de6 Poruri Sai Rahul <rporuri@enthought.com> 1461064865 +0530	commit (merge): FIX : merge conflict
+d919c361e9dfaeaff12d621ace457fbc173b4de6 98f8fd37829574750959d043598e46899a2cbb77 Poruri Sai Rahul <rporuri@enthought.com> 1461064920 +0530	checkout: moving from issue_554_reorganize_repo_layout to master
+98f8fd37829574750959d043598e46899a2cbb77 b7e59c4f06283a3c47d7478efacf14efb7d80a00 Poruri Sai Rahul <rporuri@enthought.com> 1461123498 +0530	pull origin master: Fast-forward
+b7e59c4f06283a3c47d7478efacf14efb7d80a00 a1ecaa5b705b44a27f53217208f96d14bb8e4021 Poruri Sai Rahul <rporuri@enthought.com> 1461123701 +0530	checkout: moving from master to issue_527_Qt_dialogs_refactor
+a1ecaa5b705b44a27f53217208f96d14bb8e4021 b7e59c4f06283a3c47d7478efacf14efb7d80a00 Poruri Sai Rahul <rporuri@enthought.com> 1461123733 +0530	checkout: moving from issue_527_Qt_dialogs_refactor to master
+0000000000000000000000000000000000000000 f05f64eb07c2a10935178060086d37420650d873 Poruri Sai Rahul <rahul.poruri@gmail.com> 1457067168 +0530	clone: from https://github.com/enthought/chaco.git
+f05f64eb07c2a10935178060086d37420650d873 6231bbb179579bdecd500d947a61788b5a89cb1e Poruri Sai Rahul <rahul.poruri@gmail.com> 1457070063 +0530	commit: issue : image_from_file was throwing a TraitError when run from demo window fix : redefine path to image
+6231bbb179579bdecd500d947a61788b5a89cb1e 6231bbb179579bdecd500d947a61788b5a89cb1e rahul.poruri <rahul.poruri@gmail.com> 1459135876 +0530	checkout: moving from master to docs_correction
+6231bbb179579bdecd500d947a61788b5a89cb1e 6231bbb179579bdecd500d947a61788b5a89cb1e rahul.poruri <rahul.poruri@gmail.com> 1459153240 +0530	checkout: moving from docs_correction to master
+6231bbb179579bdecd500d947a61788b5a89cb1e 6231bbb179579bdecd500d947a61788b5a89cb1e rahul.poruri <rahul.poruri@gmail.com> 1459161167 +0530	checkout: moving from master to docs_correction
+6231bbb179579bdecd500d947a61788b5a89cb1e 94d57621b9cc150e99ab91637bd74f603c0aeb3b rahul.poruri <rahul.poruri@gmail.com> 1459162109 +0530	commit: issue 291 - broken/outdated links in docs
+94d57621b9cc150e99ab91637bd74f603c0aeb3b 6231bbb179579bdecd500d947a61788b5a89cb1e rahul.poruri <rahul.poruri@gmail.com> 1459162137 +0530	checkout: moving from docs_correction to master
+6231bbb179579bdecd500d947a61788b5a89cb1e 6231bbb179579bdecd500d947a61788b5a89cb1e rahul.poruri <rahul.poruri@gmail.com> 1459162148 +0530	checkout: moving from master to screwaround
+6231bbb179579bdecd500d947a61788b5a89cb1e 94d57621b9cc150e99ab91637bd74f603c0aeb3b rahul.poruri <rahul.poruri@gmail.com> 1459162367 +0530	checkout: moving from screwaround to docs_correction
+94d57621b9cc150e99ab91637bd74f603c0aeb3b 6231bbb179579bdecd500d947a61788b5a89cb1e rahul.poruri <rahul.poruri@gmail.com> 1459162682 +0530	checkout: moving from docs_correction to master
+6231bbb179579bdecd500d947a61788b5a89cb1e 94d57621b9cc150e99ab91637bd74f603c0aeb3b rahul.poruri <rahul.poruri@gmail.com> 1459162759 +0530	checkout: moving from master to docs_correction
+94d57621b9cc150e99ab91637bd74f603c0aeb3b 94d57621b9cc150e99ab91637bd74f603c0aeb3b rahul.poruri <rahul.poruri@gmail.com> 1459162835 +0530	checkout: moving from docs_correction to docs_corrections_II
+94d57621b9cc150e99ab91637bd74f603c0aeb3b 94d57621b9cc150e99ab91637bd74f603c0aeb3b rahul.poruri <rahul.poruri@gmail.com> 1459162841 +0530	checkout: moving from docs_corrections_II to docs_correction
+94d57621b9cc150e99ab91637bd74f603c0aeb3b 6231bbb179579bdecd500d947a61788b5a89cb1e rahul.poruri <rahul.poruri@gmail.com> 1459162858 +0530	checkout: moving from docs_correction to master
+6231bbb179579bdecd500d947a61788b5a89cb1e 6231bbb179579bdecd500d947a61788b5a89cb1e rahul.poruri <rahul.poruri@gmail.com> 1459162887 +0530	checkout: moving from master to docs_correction
+6231bbb179579bdecd500d947a61788b5a89cb1e 5ab07cb6631388eadf0c7912646918fa72ff2ce6 rahul.poruri <rahul.poruri@gmail.com> 1459162965 +0530	cherry-pick: issue 291 - broken/outdated links in docs
+5ab07cb6631388eadf0c7912646918fa72ff2ce6 f05f64eb07c2a10935178060086d37420650d873 rahul.poruri <rahul.poruri@gmail.com> 1459163040 +0530	reset: moving to f05f64eb07c2a10935178060086d37420650d873
+f05f64eb07c2a10935178060086d37420650d873 1b6580b8aefdea6e135652a01f8c8e394da4c44d rahul.poruri <rahul.poruri@gmail.com> 1459163060 +0530	cherry-pick: issue 291 - broken/outdated links in docs
+1b6580b8aefdea6e135652a01f8c8e394da4c44d 6231bbb179579bdecd500d947a61788b5a89cb1e rahul.poruri <rahul.poruri@gmail.com> 1459163405 +0530	checkout: moving from docs_correction to screwaround
+6231bbb179579bdecd500d947a61788b5a89cb1e 1b6580b8aefdea6e135652a01f8c8e394da4c44d rahul.poruri <rahul.poruri@gmail.com> 1459240625 +0530	checkout: moving from screwaround to docs_correction
+1b6580b8aefdea6e135652a01f8c8e394da4c44d fafdefce9aaabc539b193f8d0dfff84267068239 rahul.poruri <rahul.poruri@gmail.com> 1459244262 +0530	commit: removed easy_install link and corrected module behavior(!)
+fafdefce9aaabc539b193f8d0dfff84267068239 6231bbb179579bdecd500d947a61788b5a89cb1e rahul.poruri <rahul.poruri@gmail.com> 1459244482 +0530	checkout: moving from docs_correction to screwaround
+6231bbb179579bdecd500d947a61788b5a89cb1e fafdefce9aaabc539b193f8d0dfff84267068239 rahul.poruri <rahul.poruri@gmail.com> 1459336417 +0530	checkout: moving from screwaround to docs_correction
+fafdefce9aaabc539b193f8d0dfff84267068239 cdf8e1bc60166a3fb8ef7483636ea1094ffe03ab rahul.poruri <rahul.poruri@gmail.com> 1459746952 +0530	commit: removed references to EPD and cleaned up references to version/release
+0000000000000000000000000000000000000000 1d0891c4fc44597be96f564cf6a4bfb18575aca1 rahul.poruri <rahul.poruri@gmail.com> 1459254897 +0530	clone: from git@github.com:rahulporuri/petProjects.git
+1d0891c4fc44597be96f564cf6a4bfb18575aca1 b2a4efa8a2fdb4221389d1f24fab257087233aa5 rahul.poruri <rahul.poruri@gmail.com> 1459254935 +0530	commit: some update
+b2a4efa8a2fdb4221389d1f24fab257087233aa5 4083bb0ec03e028307240d0101f38628ad7a1b3e rahul.poruri <rahul.poruri@gmail.com> 1459254953 +0530	commit: some other update
+4083bb0ec03e028307240d0101f38628ad7a1b3e cea5dab50a15d1f5fd3d50d8b66931d79e33726e rahul.poruri <rahul.poruri@gmail.com> 1459255094 +0530	commit: calculator app using traits ui
+cea5dab50a15d1f5fd3d50d8b66931d79e33726e 97c21408a07f66af7e2a3d9d2396ddc7b8b6f690 rahul.poruri <rahul.poruri@gmail.com> 1459256609 +0530	commit: something and overlay maps
+97c21408a07f66af7e2a3d9d2396ddc7b8b6f690 5fc5e9b60ae07947f8758abbf8c67d327d9a7515 rahul.poruri <rahul.poruri@gmail.com> 1459341655 +0530	commit: updated the text gui thingy to have a file editor - doesnt look good or work
+5fc5e9b60ae07947f8758abbf8c67d327d9a7515 358d965daeb81f8d104288d06b6973c501387fe1 rahul.poruri <rahul.poruri@gmail.com> 1459398857 +0530	commit: cleanup and started learning d3
+358d965daeb81f8d104288d06b6973c501387fe1 22212e0a1785c3d6ab7480956fad028b1aa38929 rahul.poruri <rahul.poruri@gmail.com> 1459400093 +0530	commit: starting with d3 - things are heating up
+22212e0a1785c3d6ab7480956fad028b1aa38929 6c8de722f40a05e97e234c37e38f31ac8e69db05 rahul.poruri <rahul.poruri@gmail.com> 1459401401 +0530	commit: moving on to making bar plots
+6c8de722f40a05e97e234c37e38f31ac8e69db05 ffd7958a24261a6d42f2a08713986cc586df724b rahul.poruri <rahul.poruri@gmail.com> 1459414812 +0530	commit: done with the d3 tut -- for now
+ffd7958a24261a6d42f2a08713986cc586df724b 09ded6c82fe6ed62c50921d63e4efc893656ed86 rahul.poruri <rahul.poruri@gmail.com> 1459590467 +0530	commit: convert list to dict!
+09ded6c82fe6ed62c50921d63e4efc893656ed86 38c29084a5fc7515c617c44f488ad82cd70a8252 rahul.poruri <rahul.poruri@gmail.com> 1459765222 +0530	commit: a complete make_graph code!
+38c29084a5fc7515c617c44f488ad82cd70a8252 878806f556fed64f35d616876526cef585d30666 Poruri Sai Rahul <rporuri@enthought.com> 1460203555 +0530	commit: used networkx to make graph instead of graphcanvas
+878806f556fed64f35d616876526cef585d30666 732d38e72fbe8b02a81ece00e65beb898a16661b Poruri Sai Rahul <rporuri@enthought.com> 1460362520 +0530	commit: rmd pyc files
+732d38e72fbe8b02a81ece00e65beb898a16661b 86147b529d8edac44a35e24b9b152f86de7f4dc6 Poruri Sai Rahul <rporuri@enthought.com> 1460362615 +0530	pull origin: Merge made by the 'recursive' strategy.
+86147b529d8edac44a35e24b9b152f86de7f4dc6 91ce9bae3464b694f75ba0ff26f72fdb7526f486 Poruri Sai Rahul <rporuri@enthought.com> 1460457545 +0530	commit: a pretty network! yay!
+91ce9bae3464b694f75ba0ff26f72fdb7526f486 0d64e7ad778d305023aa266fe023871f39ddb2b2 Poruri Sai Rahul <rporuri@enthought.com> 1460457700 +0530	commit: removed copyright headers from calculator stuff
+0d64e7ad778d305023aa266fe023871f39ddb2b2 3f947b0f4d4beb50491cae19a727d7cbe6099655 Poruri Sai Rahul <rporuri@enthought.com> 1460457804 +0530	commit: dumb tests in python
+3f947b0f4d4beb50491cae19a727d7cbe6099655 d1c927da7fa4d784c96c9142667e1e4927a97f2c Poruri Sai Rahul <rporuri@enthought.com> 1460457973 +0530	commit: check list of open source projects to contribute to
+d1c927da7fa4d784c96c9142667e1e4927a97f2c 74c12c5586fe79783e911128197df35c1d2d2819 Poruri Sai Rahul <rporuri@enthought.com> 1460458223 +0530	commit: updated readme to osp
+74c12c5586fe79783e911128197df35c1d2d2819 bd57a11a8a6bd75f3184a907e09a2e3c9ddb5a23 Poruri Sai Rahul <rporuri@enthought.com> 1460458824 +0530	commit: cleanup
+bd57a11a8a6bd75f3184a907e09a2e3c9ddb5a23 b61574481374263c69fd33815e1a75b8221ea31f Poruri Sai Rahul <rporuri@enthought.com> 1460464872 +0530	commit: new calculator app
+b61574481374263c69fd33815e1a75b8221ea31f 621e900e3498bcb251f63fd8a6bd83c22ecaddd5 Poruri Sai Rahul <rporuri@enthought.com> 1460464916 +0530	pull origin: Merge made by the 'recursive' strategy.
+621e900e3498bcb251f63fd8a6bd83c22ecaddd5 e4937725323e924f62f5200208741cb277a2e051 Poruri Sai Rahul <rporuri@enthought.com> 1460465579 +0530	commit: move things around
+e4937725323e924f62f5200208741cb277a2e051 3d6848b96024d16af78bae945504efc521fe2338 Poruri Sai Rahul <rporuri@enthought.com> 1460537716 +0530	commit: Qt and traitsUI based views for newModel and additions/improvements to newModel
+3d6848b96024d16af78bae945504efc521fe2338 5a94c1208ba769065343a57781b1ef6fc2e7cb7f Poruri Sai Rahul <rporuri@enthought.com> 1460547540 +0530	commit: view using Jigna for calculator
+0000000000000000000000000000000000000000 56fbc469360679ac98afb4a32fe4d2829d58af14 Poruri Sai Rahul <rahul.poruri@gmail.com> 1457419512 +0530	clone: from git@github.com:rahulporuri/setup_files.git
+56fbc469360679ac98afb4a32fe4d2829d58af14 56fbc469360679ac98afb4a32fe4d2829d58af14 Poruri Sai Rahul <rahul.poruri@gmail.com> 1457419526 +0530	checkout: moving from master to testing
+56fbc469360679ac98afb4a32fe4d2829d58af14 56fbc469360679ac98afb4a32fe4d2829d58af14 Poruri Sai Rahul <rahul.poruri@gmail.com> 1457419547 +0530	checkout: moving from testing to master
+56fbc469360679ac98afb4a32fe4d2829d58af14 56fbc469360679ac98afb4a32fe4d2829d58af14 Poruri Sai Rahul <rahul.poruri@gmail.com> 1457419582 +0530	checkout: moving from master to testing
+56fbc469360679ac98afb4a32fe4d2829d58af14 56fbc469360679ac98afb4a32fe4d2829d58af14 Poruri Sai Rahul <rahul.poruri@gmail.com> 1457419607 +0530	checkout: moving from testing to master
+56fbc469360679ac98afb4a32fe4d2829d58af14 56fbc469360679ac98afb4a32fe4d2829d58af14 Poruri Sai Rahul <rahul.poruri@gmail.com> 1457419748 +0530	checkout: moving from master to testing
+56fbc469360679ac98afb4a32fe4d2829d58af14 43d6521dd5ec1eb1be918a76fb5593be88d2dba5 Poruri Sai Rahul <rahul.poruri@gmail.com> 1457419756 +0530	commit: test file added
+43d6521dd5ec1eb1be918a76fb5593be88d2dba5 56fbc469360679ac98afb4a32fe4d2829d58af14 Poruri Sai Rahul <rahul.poruri@gmail.com> 1457419763 +0530	checkout: moving from testing to master
+56fbc469360679ac98afb4a32fe4d2829d58af14 08d0a56528ff15ffed44fa9f3294a03968039a53 Poruri Sai Rahul <rahul.poruri@gmail.com> 1457419777 +0530	merge testing: Merge made by the 'recursive' strategy.
+08d0a56528ff15ffed44fa9f3294a03968039a53 43d6521dd5ec1eb1be918a76fb5593be88d2dba5 Poruri Sai Rahul <rahul.poruri@gmail.com> 1457422926 +0530	checkout: moving from master to testing
+43d6521dd5ec1eb1be918a76fb5593be88d2dba5 37fc826be07c8cbd9be325a8fdb2495d4245957d Poruri Sai Rahul <rahul.poruri@gmail.com> 1457423004 +0530	commit: added test_file_2
+37fc826be07c8cbd9be325a8fdb2495d4245957d 37fc826be07c8cbd9be325a8fdb2495d4245957d Poruri Sai Rahul <rahul.poruri@gmail.com> 1457426899 +0530	checkout: moving from testing to testing
+37fc826be07c8cbd9be325a8fdb2495d4245957d 36ee8c6cb11fad2269ae5d8a9ee339771879a8d6 Poruri Sai Rahul <rahul.poruri@gmail.com> 1457427010 +0530	commit: test files removed
+36ee8c6cb11fad2269ae5d8a9ee339771879a8d6 08d0a56528ff15ffed44fa9f3294a03968039a53 Poruri Sai Rahul <rahul.poruri@gmail.com> 1457604113 +0530	checkout: moving from testing to master
+08d0a56528ff15ffed44fa9f3294a03968039a53 36ee8c6cb11fad2269ae5d8a9ee339771879a8d6 Poruri Sai Rahul <rahul.poruri@gmail.com> 1457604127 +0530	checkout: moving from master to testing
+36ee8c6cb11fad2269ae5d8a9ee339771879a8d6 3e9d97c2b46b395b6e27cce9572636cd829a0e90 Poruri Sai Rahul <rahul.poruri@gmail.com> 1457604366 +0530	commit: added file1
+3e9d97c2b46b395b6e27cce9572636cd829a0e90 3e9d97c2b46b395b6e27cce9572636cd829a0e90 Poruri Sai Rahul <rahul.poruri@gmail.com> 1457604396 +0530	checkout: moving from testing to testing1
+3e9d97c2b46b395b6e27cce9572636cd829a0e90 08d0a56528ff15ffed44fa9f3294a03968039a53 Poruri Sai Rahul <rahul.poruri@gmail.com> 1457604446 +0530	checkout: moving from testing1 to master
+08d0a56528ff15ffed44fa9f3294a03968039a53 08d0a56528ff15ffed44fa9f3294a03968039a53 Poruri Sai Rahul <rahul.poruri@gmail.com> 1457604457 +0530	checkout: moving from master to testing2
+08d0a56528ff15ffed44fa9f3294a03968039a53 08d0a56528ff15ffed44fa9f3294a03968039a53 Poruri Sai Rahul <rahul.poruri@gmail.com> 1457609462 +0530	checkout: moving from testing2 to master
+08d0a56528ff15ffed44fa9f3294a03968039a53 97337e681e7d6e3b93bd9d4dc5366bed3634075f rahul.poruri <rahul.poruri@gmail.com> 1459255297 +0530	commit: updates to vimrc and git prompt
+97337e681e7d6e3b93bd9d4dc5366bed3634075f 6d2e33e7f2a0f0b5fd5692119caff562c49fa09d rahul.poruri <rahul.poruri@gmail.com> 1459255347 +0530	pull origin master: Merge made by the 'recursive' strategy.
